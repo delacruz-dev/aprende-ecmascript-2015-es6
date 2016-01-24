@@ -7,7 +7,7 @@
 * [Capítulo 4: Plantillas de cadenas de texto](chapter4.md)
 * [Capítulo 5: Desestructuración](chapter5.md)
 * [Capítulo 6: Parámetros por defecto](chapter6.md)
-* Capítulo 7: Spread operator
+* [Capítulo 7: Spread operator](chapter7.md)
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * Capítulo 9: Clases
 * Capítulo 10: Object literals
