@@ -10,4 +10,5 @@
 * Capítulo 7: Spread operator
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * Capítulo 9: Clases
+* Capítulo 10: Object literals
 
