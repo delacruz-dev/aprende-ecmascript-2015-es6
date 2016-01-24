@@ -14,4 +14,5 @@
 * Capítulo 11: Símbolos
 * Capítulo 12: Iteradores
 * Capítulo 13: Generadores
+* Capítulo 14: Colecciones
 
