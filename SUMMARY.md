@@ -16,4 +16,5 @@
 * Capítulo 13: Generadores
 * Capítulo 14: Colecciones
 * Capítulo 15: Módulos
+* Capítulo 16: Proxies
 
