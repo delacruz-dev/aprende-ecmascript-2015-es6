@@ -15,7 +15,7 @@ Tomemos como ejemplo la siguiente función en ES5:
 
 Uno de los mayores problemas a los que nos hemos enfrentado siempre los desarrolladores de JavaScript es el conocido como **hoisting** ("elevación"). El término *hoisting*, el cual no está definido dentro del actual ECMAScript, es comúnmente utilizado para describir el particular comportamiento que JavaScript hace de las variables en el interior de las funciones.
 
-Se entiende como *hoisting* el comportamiento por defecto de cualquier intérprete de javascript, que ubica cualquier variable declarada al comienzo de su contexto.
+Se entiende como *hoisting* el comportamiento por defecto de cualquier intérprete de JavaScript, que ubica cualquier variable declarada al comienzo de su contexto.
 
     TODO: definir contexto en javascript
 
