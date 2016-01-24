@@ -13,7 +13,7 @@
 * [Capítulo 10: Object literals](chapter10.md)
 * [Capítulo 11: Símbolos](chapter11.md)
 * [Capítulo 12: Iteradores](chapter12.md)
-* Capítulo 13: Generadores
+* [Capítulo 13: Generadores](chapter13.md)
 * Capítulo 14: Colecciones
 * Capítulo 15: Módulos
 * Capítulo 16: Proxies
