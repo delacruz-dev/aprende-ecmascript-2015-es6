@@ -11,7 +11,7 @@
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * [Capítulo 9: Clases](chapter9.md)
 * [Capítulo 10: Object literals](chapter10.md)
-* Capítulo 11: Símbolos
+* [Capítulo 11: Símbolos](chapter11.md)
 * Capítulo 12: Iteradores
 * Capítulo 13: Generadores
 * Capítulo 14: Colecciones
