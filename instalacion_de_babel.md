@@ -21,10 +21,12 @@ Una vez creado el repositorio, añadiremos un nuevo archivo:
 $ touch my-file.js
 ```
 Y copiaremos el siguiente código:
+
 ```javascript
 const square = (n) => n * n;
 console.log(square(2));
 ```
+
 No te preocupes demasiado por entender la sintaxis, ya que la trabajaremos más adelante en detenimiento. Simplemente ten en cuenta que al ejecutar el código en la consola de Node.JS, debería daarte el cuadrado de 2, o sea: 4.
 
 Volviendo a Babel, el archivo que acabamos de crear nos servirá para mostrar el resultado de una compilación de ES6 a ES5.
