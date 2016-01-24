@@ -10,16 +10,21 @@ Para comenzar, abrimos una nueva sesión de terminal del sistema e inicializamos
 ```terminal
 $ npm init -y
 ```
+
 Esto debería crear la siguiente estructura de archivos en el directorio:
+
 ```terminal
 .
 ├── node_modules
 └── package.json
 ```
+
 Una vez creado el repositorio, añadiremos un nuevo archivo:
+
 ```terminal
 $ touch my-file.js
 ```
+
 Y copiaremos el siguiente código:
 
 ```javascript
