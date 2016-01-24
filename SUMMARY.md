@@ -19,4 +19,5 @@
 * Capítulo 16: Proxies
 * Capítulo 17: Promesas
 * Capítulo 18: Reflection
+* Capítulo 19: Decoradores
 
