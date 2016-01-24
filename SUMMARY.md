@@ -6,7 +6,7 @@
 * [Capítulo 3: Variables de ámbito local: `let` y `const`](chapter3.md)
    * [Hoisting: Lidiando con el contexto en ES5](hoisting_lidiando_con_el_contexto_en_es5.md)
    * [Declaración de variables de ámbito local: `let`](declaracion_de_variables_de_ambito_local_let.md)
-   * Declaración de variables inmutables con `const`
+   * [Declaración de variables inmutables con `const`](declaracion_de_variables_inmutables_const.md)
 * [Capítulo 4: Plantillas de cadenas de texto](chapter4.md)
 * [Capítulo 5: Desestructuración](chapter5.md)
 * [Capítulo 6: Parámetros por defecto](chapter6.md)
