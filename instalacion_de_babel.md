@@ -51,3 +51,5 @@ Y luego, en el archivo `package.json`, añadiremos la siguiente línea:
     },
  }
 ```
+
+    TODO: Completar con información del Babel Handbook: https://github.com/thejameskyle/babel-handbook/blob/master/translations/es-ES/user-handbook.md
