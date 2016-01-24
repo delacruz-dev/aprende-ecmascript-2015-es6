@@ -17,7 +17,7 @@
 * [Capítulo 14: Colecciones](chapter14.md)
 * [Capítulo 15: Módulos](chapter15.md)
 * [Capítulo 16: Proxies](chapter16.md)
-* Capítulo 17: Promesas
+* [Capítulo 17: Promesas](chapter17.md)
 * Capítulo 18: Reflection
 * Capítulo 19: Decoradores
 
