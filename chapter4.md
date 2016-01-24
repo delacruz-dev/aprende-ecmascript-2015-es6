@@ -44,3 +44,29 @@ var quijote = `En un lugar
 , de cuyo nombre
  no quiero acordarme`;
 ```
+## Plantillas de cadena de texto con postprocesador
+Una forma más avanzada de plantillas de cadenas de texto son aquellas que contienen una función de postprocesado . Con ellas es posible modificar la salida de las plantillas, usando una función. El primer argumento contiene un array con las cadenas de texto de la plantilla ("Hola" y "mundo" en el ejemplo). El segundo y subsiguientes argumentos con los valores procesados ( ya cocinados ) de las expresiones de la plantilla (en este caso "15" y "50"). Finalmente, la función devuelve la cadena de texto manipulada. El nombre "tag" de la función no es nada especial, se puede usar cualquier nombre de función en su lugar.
+
+```javascript
+var a = 5;
+var b = 10;
+
+function tag(strings, ...values) {
+  console.log(strings[0]); // "Hola "
+  console.log(strings[1]); // " mundo "
+  console.log(values[0]);  // 15
+  console.log(values[1]);  // 50
+
+  return "Bazinga!";
+}
+
+tag`Hola ${ a + b } mundo ${ a * b}`;
+// "Bazinga!"
+```
+
+    TODO: Mejorar los ejemplos y las descripciones. 
+    
+    TODO: Hablar de utilizar tags para i18n. 
+    
+    TODO: Completar con información de MDN: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
+    
