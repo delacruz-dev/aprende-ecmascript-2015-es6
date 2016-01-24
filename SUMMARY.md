@@ -19,5 +19,5 @@
 * [Capítulo 16: Proxies](chapter16.md)
 * [Capítulo 17: Promesas](chapter17.md)
 * [Capítulo 18: Reflection](chapter18.md)
-* Capítulo 19: Decoradores
+* [Capítulo 19: Decoradores](chapter19.md)
 
