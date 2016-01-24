@@ -3,6 +3,7 @@
 * [Introducción](README.md)
 * [Capítulo 1: Introducción a ECMAScript 6](chapter1.md)
 * [Capítulo 2: Configuración y uso de Babel](chapter2.md)
+   * Instalación de Babel
 * [Capítulo 3: Variables de ámbito local: `let` y `const`](chapter3.md)
    * [Hoisting: Lidiando con el contexto en ES5](hoisting_lidiando_con_el_contexto_en_es5.md)
    * [Declaración de variables de ámbito local: `let`](declaracion_de_variables_de_ambito_local_let.md)
