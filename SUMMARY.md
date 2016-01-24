@@ -8,5 +8,5 @@
 * Capítulo 5: Desestructuración
 * Capítulo 6: Parámetros por defecto
 * Capítulo 7: Spread operator
-* Arrow Functions y ámbito léxico
+* [Arrow Functions y ámbito léxico](chapter8.md)
 
