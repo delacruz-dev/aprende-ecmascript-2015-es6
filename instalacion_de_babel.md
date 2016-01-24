@@ -42,4 +42,12 @@ Pero antes tenemos que instalarlo y configurarlo como uno de los scripts de `npm
 $ npm install --save-dev babel-cli
 ````
 
-Y luego, en el archivo `package.json` 
+Y luego, en el archivo `package.json`, añadiremos la siguiente línea:
+
+```json
+{
+    "scripts": {
+        "babel": "babel my-file.js"
+    },
+ }
+```
