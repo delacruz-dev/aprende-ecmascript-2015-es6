@@ -6,4 +6,5 @@
 * [Capítulo 3: Variables de ámbito local: `let` y `const`](chapter3.md)
 * [Capítulo 4: Plantillas de cadenas de texto](chapter4.md)
 * Capítulo 5: Desestructuración
+* Capítulo 6: Parámetros por defecto
 
