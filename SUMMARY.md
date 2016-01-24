@@ -9,7 +9,7 @@
 * [Capítulo 6: Parámetros por defecto](chapter6.md)
 * [Capítulo 7: Spread operator](chapter7.md)
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
-* Capítulo 9: Clases
+* [Capítulo 9: Clases](chapter9.md)
 * Capítulo 10: Object literals
 * Capítulo 11: Símbolos
 * Capítulo 12: Iteradores
