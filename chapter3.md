@@ -25,8 +25,15 @@ Por ejemplo, observemos el siguiente código:
 
 ```javascript
 function foo(){
- bar();
- var x = 1;
+    bar();
+    var x = 1;
 }
 ```
 Cuando dicho código pase a ser tratado por un intérprete de JavaScript, se convertirá en lo siguiente:
+```javascript
+function foo(){
+    var x;
+    bar();
+    x = 1;
+}
+```
