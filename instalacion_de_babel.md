@@ -40,7 +40,7 @@ Pero antes tenemos que instalarlo y configurarlo como uno de los scripts de `npm
 
 ```terminal
 $ npm install --save-dev babel-cli
-````
+```
 
 Y luego, en el archivo `package.json`, añadiremos la siguiente línea:
 
