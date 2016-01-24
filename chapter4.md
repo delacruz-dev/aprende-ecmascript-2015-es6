@@ -23,7 +23,7 @@ Sin embargo, con ES2015 ahora podemos convertir la función `greet` en:
 
 ```javascript
 var greet = function(person){
-    return "Hello! My name is ${person.name} and I'm ${person.age} years old";
+    return `Hello! My name is ${person.name} and I'm ${person.age} years old`;
 };
 ```
 
@@ -39,8 +39,8 @@ var quijote = "En un lugar" +
 A esto:
 
 ```javascript
-var quijote = "En un lugar
+var quijote = `En un lugar
  de la mancha
 , de cuyo nombre
- no quiero acordarme";
+ no quiero acordarme`;
 ```
