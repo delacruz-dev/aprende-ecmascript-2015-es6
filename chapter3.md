@@ -1,5 +1,7 @@
 # Capítulo 3: Variables de ámbito local: `let` y `const`
 
+## Hoisting: Lidiando con el contexto en ECMAScript 5
+
 Tomemos como ejemplo la siguiente función en ES5:
 
 ```javascript
@@ -36,4 +38,37 @@ function foo(){
     bar();
     x = 1;
 }
+```
+Algo que podría parecer trivial, puede llegar a ocasionar comportamientos no esperados:
+
+```javascript
+var x = 'Hello World'; // variable global
+ 
+function foo(){
+ console.log( x ); // esperamos el valor global
+ var x = 'New Value'; // redefinimos la variable en contexto local
+ console.log( x );  // esperamos el nuevo valor local
+}
+ 
+foo();
+```
+En el ejemplo anterior, declaramos la variable `x` en el contexto global. Dentro de la función `foo()`, se define un nuevo contexto, local a la función declarada. En la primera sentencia esperamos que la consola imprima `Hello World`, para después re-definir el valor de `x` y volverla a imprimir por consola, esta vez con el nuevo valor: `New Value`. Sin embargo, lo que ocurre es lo siguiente:
+```
+> undefined
+> New Value
+```
+¿Qué ha ocurrido? Por qué el intérprete imprime un `undefined` en lugar del esperado `Hello World`?
+
+La respuesta, como te imaginarás, es el **hoisting**. Al crear un nuevo contexto de función, la declaración de la variable se eleva hasta el inicio del nuevo contexto, quedando la función tal que así:
+```javascript
+var x = 'Hello World';
+ 
+function foo(){
+ var x;
+ console.log( x );
+ x = 'New Value';
+ console.log( x );
+}
+ 
+foo();
 ```
