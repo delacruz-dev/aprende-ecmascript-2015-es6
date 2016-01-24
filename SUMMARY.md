@@ -12,4 +12,5 @@
 * Capítulo 9: Clases
 * Capítulo 10: Object literals
 * Capítulo 11: Símbolos
+* Capítulo 12: Iteradores
 
