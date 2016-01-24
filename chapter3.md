@@ -13,4 +13,6 @@ Tomemos como ejemplo la siguiente función en ES5:
 })();
 ```
 
-Uno de los mayores problemas a los que nos hemos enfrentado siempre los desarrolladores de JavaScript es el conocido como **hoisting**. El término *hoisting*, el cual no está definido dentro del actual ECMAScript, es comunmente utilizado para describir el particular comportamiento que JavaScript hace de las variables en el interior de las funciones.
+Uno de los mayores problemas a los que nos hemos enfrentado siempre los desarrolladores de JavaScript es el conocido como **hoisting** ("elevación"). El término *hoisting*, el cual no está definido dentro del actual ECMAScript, es comúnmente utilizado para describir el particular comportamiento que JavaScript hace de las variables en el interior de las funciones.
+
+Dicho funcionamiento 
