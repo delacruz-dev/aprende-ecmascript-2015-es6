@@ -17,4 +17,5 @@
 * Capítulo 14: Colecciones
 * Capítulo 15: Módulos
 * Capítulo 16: Proxies
+* Capítulo 17: Promesas
 
