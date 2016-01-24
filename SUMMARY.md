@@ -6,7 +6,7 @@
 * [Capítulo 3: Variables de ámbito local: `let` y `const`](chapter3.md)
 * [Capítulo 4: Plantillas de cadenas de texto](chapter4.md)
 * [Capítulo 5: Desestructuración](chapter5.md)
-* Capítulo 6: Parámetros por defecto
+* [Capítulo 6: Parámetros por defecto](chapter6.md)
 * Capítulo 7: Spread operator
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * Capítulo 9: Clases
