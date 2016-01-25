@@ -5,6 +5,7 @@ El intérprete de línea de comandos **Babel CLI** es una herramienta simple que
 
 Puede instalarse globablmente para tenerlo disponible en cualquier directorio que lo necesitemos, aunque si pensamos en distribuir nuestros proyectos *open source*, es preferible instalarlo a nivel local. En este ejemplo lo haremos de la segunda forma.
 
+### Creando un entorno de pruebas
 Para comenzar, abrimos una nueva sesión de terminal del sistema e inicializamos un nuevo repositorio de npm:
 
 ```terminal
@@ -32,8 +33,9 @@ const square = (n) => n * n;
 console.log(square(2));
 ```
 
-No te preocupes demasiado por entender la sintaxis, ya que la trabajaremos más adelante en detenimiento. Simplemente ten en cuenta que al ejecutar el código en la consola de Node.JS, debería daarte el cuadrado de 2, o sea: 4.
+No te preocupes demasiado por entender la sintaxis, ya que la trabajaremos más adelante en detenimiento. Simplemente ten en cuenta que al ejecutar el código en la consola de Node.JS, debería darte el cuadrado de 2, o sea: 4.
 
+### Instalando babel-cli como un script de npm
 Volviendo a Babel, el archivo que acabamos de crear nos servirá para mostrar el resultado de una compilación de ES6 a ES5.
 
 Pero antes tenemos que instalarlo y configurarlo como uno de los scripts de `npm` de nuestro proyecto. Para instalarlo, escribe:
@@ -49,7 +51,58 @@ Y luego, en el archivo `package.json`, añadiremos la siguiente línea:
     "scripts": {
         "babel": "babel my-file.js"
     },
- }
+}
 ```
 
-    TODO: Completar con información del Babel Handbook: https://github.com/thejameskyle/babel-handbook/blob/master/translations/es-ES/user-handbook.md
+Una vez añadida, ya tendremos una tarea de NPM que podremos ejecutar desde consola para compilar el código. Ejecuta el siguiente comando:
+
+```terminal
+$ npm run babel
+```
+
+Esto debería producir la siguiente salida de consola:
+
+```terminal
+$ npm run babel
+
+> my-dir@1.0.0 babel /path/to/my-dir
+> babel my-file.js
+
+const square = n => n * n;
+console.log(square(2));
+```
+
+### Especificar un archivo de salida
+Como verás, se imprime por consola el contenido de tu archivo. Esto tiene escasa utilidad, más allá de comprobar que efectivamente, `babel-cli` está funcionando. Si en lugar de la consola queremos que el *output* tenga como destino un archivo de destino, modificaremos el script en nuestro `package.json` con lo siguiente:
+
+```json
+{
+    "scripts": {
+        "babel": "babel my-file.js --out-file compiled.js"
+    },
+}
+```
+
+En esta ocasión, hemos indicado el nombre del archivo de destino con el modificador `--out-file` (también serviría simplemente `-o`. Si volvemos a ejecutar la tarea `npm run build`, deberíamos observar la siguiente salida en la consola:
+
+```terminal
+$ npm run babel
+
+> my-dir@1.0.0 babel /path/to/my-dir
+> babel my-file.js --out-file compiled.js
+```
+Además, en esta ocasión se habrá creado un nuevo archivo `compiled.js` con el contenido del archivo original. Todavía no estamos aplicando ninguna transformación.
+
+### Compilar todo el contenido de una carpeta
+
+Si nuestra aplicación crece, es normal que tengamos varios módulos, así que es poco habitual que solamente compilemos un único archivo. Para especificar todo un directorio, modificaremos nuestro script en el `package.json` de esta manera:
+
+```json
+{
+    "scripts": {
+        "babel": "babel src --out-dir lib"
+    },
+}
+```
+
+Si organizamos todo el código de nuestra aplicación bajo la carpeta `src`, este script compilará todo lo que encuentre y lo escribirá en la carpeta `lib`. Los nombres de carpetas son totalmente arbitrarios, podéis elegir el que más os guste.
