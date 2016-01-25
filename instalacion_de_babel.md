@@ -106,3 +106,7 @@ Si nuestra aplicación crece, es normal que tengamos varios módulos, así que e
 ```
 
 Si organizamos todo el código de nuestra aplicación bajo la carpeta `src`, este script compilará todo lo que encuentre y lo escribirá en la carpeta `lib`. Los nombres de carpetas son totalmente arbitrarios, podéis elegir el que más os guste.
+
+## Configuración de Babel
+
+    TODO: Hablar de .babelrc
