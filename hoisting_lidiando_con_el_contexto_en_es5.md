@@ -62,18 +62,18 @@ En el ejemplo anterior, declaramos la variable `x` en el contexto global. Dentro
 ¿Qué ha ocurrido? Por qué el intérprete imprime un `undefined` en lugar del esperado `Hello World`?
 
 La respuesta, como te imaginarás, es el **hoisting**. Al crear un nuevo contexto de función, la declaración de la variable se eleva hasta el inicio del nuevo contexto, quedando la función tal que así:
+
 ```javascript
 var x = 'Hello World';
  
-function foo(){
+(function foo(){
  var x;
  console.log( x );
  x = 'New Value';
  console.log( x );
-}
- 
-foo();
+})();
 ```
+
 Como ves, `x` se *define* antes de la primera impresión por consola, sobrescribiendo el valor asignado en ámbito global. Sin embargo, no es hasta después del primer `console.log` cuando se le asigna el nuevo valor.
 
 Esto, como imaginarás, genera todo tipo de inconsistencias en el código de aplicaciones complejas que obligan a pensar dos veces dónde declarar y asignar valores a nuestras variables. 
