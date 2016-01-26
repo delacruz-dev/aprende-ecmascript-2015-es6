@@ -57,8 +57,8 @@ A esto:
 ```javascript
 // ES6
 var quijote = `En un lugar
- de la mancha
-, de cuyo nombre
+ de la mancha, 
+ de cuyo nombre
  no quiero acordarme`;
 ```
 
