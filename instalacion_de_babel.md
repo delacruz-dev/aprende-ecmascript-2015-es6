@@ -142,4 +142,14 @@ Como consejo, te diría que intentes mantener el archivo `package.json` lo más 
 Una vez configurado, si ejecutamos nuestra tarea de compilación, observaremos un resultado muy distinto en el fichero generado:
 
 ```javascript
+"use strict";
+
+var square = function square(n) {
+  return n * n;
+};
+console.log(square(2));
 ```
+
+Como verás, se ha transformado el código ECMAScript 6 en un código de ECMAScript 5 que será compatible con la gran mayoría de navegadores del mercado y además es muy legible.
+
+A partir de ahora, ya podemos incorporar la sintaxis ES2015 a nuestros proyectos, pues tan solo con incluir Babel en nuestro flujo de trabajo podremos desplegar código compatible con cualquier cliente sin preocuparnos por ello.
