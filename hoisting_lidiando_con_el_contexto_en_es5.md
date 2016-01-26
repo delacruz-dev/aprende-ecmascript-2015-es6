@@ -45,10 +45,10 @@ Algo que podría parecer trivial, puede llegar a ocasionar comportamientos no es
 ```javascript
 var x = 'Hello World'; // variable global
  
-function foo(){
- console.log( x ); // esperamos el valor global
+function foo() {
+ console.log(x); // esperamos el valor global
  var x = 'New Value'; // redefinimos la variable en contexto local
- console.log( x );  // esperamos el nuevo valor local
+ console.log(x);  // esperamos el nuevo valor local
 }
  
 foo();
