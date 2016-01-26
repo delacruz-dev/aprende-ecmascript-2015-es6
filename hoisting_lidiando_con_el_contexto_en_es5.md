@@ -53,6 +53,7 @@ function foo(){
  
 foo();
 ```
+
 En el ejemplo anterior, declaramos la variable `x` en el contexto global. Dentro de la función `foo()`, se define un nuevo contexto, local a la función declarada. En la primera sentencia esperamos que la consola imprima `Hello World`, para después re-definir el valor de `x` y volverla a imprimir por consola, esta vez con el nuevo valor: `New Value`. Sin embargo, lo que ocurre es lo siguiente:
 ```
 > undefined
