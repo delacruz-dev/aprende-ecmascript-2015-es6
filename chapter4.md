@@ -49,7 +49,7 @@ También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
 ```javascript
 // ES5
-var text = ["línea 1", "línea 2", "línea 3"].join("\n");
+var text = ["En un lugar", "de la mancha", ", de cuyo nombre", "no quiero acordarme"].join("\n");
 ```
 
 A esto:
