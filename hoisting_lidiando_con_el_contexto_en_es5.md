@@ -53,10 +53,12 @@ var x = 'Hello World'; // variable global
 ```
 
 En el ejemplo anterior, declaramos la variable `x` en el contexto global. Dentro de la función `foo()`, se define un nuevo contexto, local a la función declarada. En la primera sentencia esperamos que la consola imprima `Hello World`, para después re-definir el valor de `x` y volverla a imprimir por consola, esta vez con el nuevo valor: `New Value`. Sin embargo, lo que ocurre es lo siguiente:
-```
+
+```terminal
 > undefined
 > New Value
 ```
+
 ¿Qué ha ocurrido? Por qué el intérprete imprime un `undefined` en lugar del esperado `Hello World`?
 
 La respuesta, como te imaginarás, es el **hoisting**. Al crear un nuevo contexto de función, la declaración de la variable se eleva hasta el inicio del nuevo contexto, quedando la función tal que así:
