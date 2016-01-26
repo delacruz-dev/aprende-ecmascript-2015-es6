@@ -31,6 +31,7 @@ function foo(){
 ```
 
 Cuando dicho código pase a ser tratado por un intérprete de JavaScript, se convertirá en lo siguiente:
+
 ```javascript
 function foo(){
     var x;
@@ -38,6 +39,7 @@ function foo(){
     x = 1;
 }
 ```
+
 Algo que podría parecer trivial, puede llegar a ocasionar comportamientos no esperados:
 
 ```javascript
