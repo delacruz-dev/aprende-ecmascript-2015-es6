@@ -45,6 +45,7 @@ var greet = function(person) {
 };
 ```
 
+## Strings de múltiples líneas
 También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
 ```javascript
