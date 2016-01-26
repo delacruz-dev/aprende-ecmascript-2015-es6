@@ -76,7 +76,7 @@ var x = 'Hello World';
 })();
 ```
 
-Como ves, `x` se *define* antes de la primera impresión por consola, sobrescribiendo el valor asignado en ámbito global. Sin embargo, no es hasta después del primer `console.log` cuando se le asigna el nuevo valor.
+Como ves, `x` se *define* antes de la primera impresión por consola, sobrescribiendo el valor asignado en contexto global. Sin embargo, no es hasta después del primer `console.log` cuando se le asigna el nuevo valor.
 
 Esto, como imaginarás, genera todo tipo de inconsistencias en el código de aplicaciones complejas que obligan a pensar dos veces dónde declarar y asignar valores a nuestras variables. 
 
