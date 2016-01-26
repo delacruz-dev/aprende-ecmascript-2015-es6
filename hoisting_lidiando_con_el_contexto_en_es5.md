@@ -29,6 +29,7 @@ function foo(){
     var x = 1;
 }
 ```
+
 Cuando dicho código pase a ser tratado por un intérprete de JavaScript, se convertirá en lo siguiente:
 ```javascript
 function foo(){
