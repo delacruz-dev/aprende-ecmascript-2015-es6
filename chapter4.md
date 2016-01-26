@@ -18,6 +18,8 @@ Ahora puede expresar con:
 let hello = `Hola Mundo`;
 ```
 
+## Interpolación
+
 En ES5, si queríamos crear un string con contenido no estático, no había muchas formas mejores de hacerlo que la siguiente:
 
 ```javascript
