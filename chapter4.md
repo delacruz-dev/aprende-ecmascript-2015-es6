@@ -47,10 +47,7 @@ También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
 ```javascript
 // ES5
-var quijote = "En un lugar" +
-" de la mancha" +
-", de cuyo nombre" +
-" no quiero acordarme";
+var quijote = ["línea 1", "línea 2", "línea 3"].join("\n");
 ```
 
 A esto:
