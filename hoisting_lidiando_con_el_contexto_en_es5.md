@@ -78,5 +78,5 @@ Como ves, `x` se *define* antes de la primera impresión por consola, sobrescrib
 
 Esto, como imaginarás, genera todo tipo de inconsistencias en el código de aplicaciones complejas que obligan a pensar dos veces dónde declarar y asignar valores a nuestras variables. 
 
-Por este motivo, los expertos recomiendan declarar las variables al principio del contexto, ya que así además incrementamos la legibilidad del código. 
+Por este motivo, se dice que es una buena práctica declarar las variables al principio del contexto, ya que así además incrementamos la legibilidad del código. 
 
