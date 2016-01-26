@@ -21,7 +21,7 @@ Se entiende como *hoisting* el comportamiento por defecto de cualquier intérpre
     http://ryanmorr.com/understanding-scope-and-context-in-javascript/
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
-Dicho funcionamiento ha sido ampliamente discutido por la comunidad de desarrolladores sobre si se trataba de un *bug* o una *feature*. Por citar un ejemplo, **John Resig**, creador de **jQuery**, es un poderoso aliado a la hora de gestionar los ámbitos que alcanzan nuestras variables. Sin embargo hay otros que pensamos que se trata de una fuente irremediable de inconsistencias en nuestros códigos y errores potenciales difíciles de diagnosticar.
+Dicho funcionamiento ha sido ampliamente discutido por la comunidad de desarrolladores sobre si se trataba de un *bug* o una *feature*. Por citar un ejemplo, **John Resig**, creador de **jQuery**, es un poderoso aliado a la hora de gestionar el alcance nuestras variables. Sin embargo hay otros que pensamos que se trata de una fuente irremediable de inconsistencias en nuestros códigos y errores potenciales difíciles de diagnosticar.
 
 Por ejemplo, observemos el siguiente código:
 
