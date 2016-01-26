@@ -1,4 +1,4 @@
-# Instalación de Babel
+# Instalación básica de Babel
 
 ## `babel-cli`
 El intérprete de línea de comandos **Babel CLI** es una herramienta simple que nos permite compilar archivos con Babel desde nuestro terminal.
