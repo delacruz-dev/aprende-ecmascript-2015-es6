@@ -19,6 +19,24 @@ Ahora puede expresar con:
 let hello = `Hola Mundo`;
 ```
 
+## Strings de múltiples líneas
+También podemos disponer de strings de múltiples líneas, y pasar de esto:
+
+```javascript
+// ES5
+var text = ["En un lugar", "de la mancha,", "de cuyo nombre", "no quiero acordarme"].join("\n");
+```
+
+A esto:
+
+```javascript
+// ES6
+var quijote = `En un lugar
+ de la mancha, 
+ de cuyo nombre
+ no quiero acordarme`;
+```
+
 ## Interpolación
 
 En ES5, si queríamos crear un string con contenido no estático, no había muchas formas mejores de hacerlo que la siguiente:
@@ -44,24 +62,6 @@ Sin embargo, con ES2015 ahora podemos convertir la función `greet` en:
 var greet = function(person) {
     return `Hello! My name is ${person.name} and I'm ${person.age} years old`;
 };
-```
-
-## Strings de múltiples líneas
-También podemos disponer de strings de múltiples líneas, y pasar de esto:
-
-```javascript
-// ES5
-var text = ["En un lugar", "de la mancha,", "de cuyo nombre", "no quiero acordarme"].join("\n");
-```
-
-A esto:
-
-```javascript
-// ES6
-var quijote = `En un lugar
- de la mancha, 
- de cuyo nombre
- no quiero acordarme`;
 ```
 
 ## Plantillas de cadena de texto con postprocesador
