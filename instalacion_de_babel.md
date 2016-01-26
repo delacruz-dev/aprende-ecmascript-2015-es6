@@ -109,7 +109,7 @@ Si organizamos todo el código de nuestra aplicación bajo la carpeta `src`, est
 
 ## Configuración de Babel
 
-Hasta ahora hemos preparado un entorno para compilar nuestros archivos con Babel, pero realmente no estamos haciendo ninguna transformación al código.
+Hasta ahora hemos preparado un entorno para compilar nuestros archivos con Babel, pero realmente no estamos haciendo ninguna transformación al código. Eso se debe a que todavía no le hemos dicho a Babel que haga nada en concreto.
 
 Desde la publicación de Babel 6, esta funcionalidad se ha extraído del núcleo de Babel para ofrecerse como paquetes por separado, a los que sus creadores llaman *presets*. Dichos *presets* son muy específicos y hacen que la herramienta sea mucho más modular y extensible. 
 
@@ -119,6 +119,27 @@ Así que si queremos trabajar con ECMAScript 6, deberemos instalar el preset cor
 $ npm install --save-dev babel-preset-es2015
 ```
 
+Ahora, todo lo que necesitamos es crear un fichero `.babelrc` en la raíz de nuestro proyecto y añadir la siguiente configuración:
 
+```json
+{
+    "presets": [ "es2015" ],
+    "plugins": []
+}
+```
 
-    TODO: Hablar de .babelrc
+Si lo preferimos, esta configuración puede ir directamente en el `package.json` de la siguiente forma:
+
+```json
+"babel": {
+    "presets": [ "es2015" ],
+    "plugins": []
+}
+```
+
+Como consejo, te diría que intentes mantener el archivo `package.json` lo más limpio posible y pongas la configuración de Babel en su propio archivo de configuración, ya que el `package.json` tiene bastantes cosas de por si. Aunque es una elección personal.
+
+Una vez configurado, si ejecutamos nuestra tarea de compilación, observaremos un resultado muy distinto en el fichero generado:
+
+```javascript
+```
