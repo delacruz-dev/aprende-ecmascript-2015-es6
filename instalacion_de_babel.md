@@ -3,7 +3,7 @@
 ## `babel-cli`
 El intérprete de línea de comandos **Babel CLI** es una herramienta simple que nos permite compilar archivos con Babel desde nuestro terminal.
 
-Puede instalarse globablmente para tenerlo disponible en cualquier directorio que lo necesitemos, aunque si pensamos en distribuir nuestros proyectos *open source*, es preferible instalarlo a nivel local. En este ejemplo lo haremos de la segunda forma.
+Puede instalarse globalmente para tenerlo disponible en cualquier directorio que lo necesitemos, aunque si pensamos en distribuir nuestros proyectos *open source*, es preferible instalarlo a nivel local. En este ejemplo lo haremos de la segunda forma.
 
 ### Creando un entorno de pruebas
 Para comenzar, abrimos una nueva sesión de terminal del sistema e inicializamos un nuevo repositorio de npm:
@@ -108,5 +108,17 @@ Si nuestra aplicación crece, es normal que tengamos varios módulos, así que e
 Si organizamos todo el código de nuestra aplicación bajo la carpeta `src`, este script compilará todo lo que encuentre y lo escribirá en la carpeta `lib`. Los nombres de carpetas son totalmente arbitrarios, podéis elegir el que más os guste.
 
 ## Configuración de Babel
+
+Hasta ahora hemos preparado un entorno para compilar nuestros archivos con Babel, pero realmente no estamos haciendo ninguna transformación al código.
+
+Desde la publicación de Babel 6, esta funcionalidad se ha extraído del núcleo de Babel para ofrecerse como paquetes por separado, a los que sus creadores llaman *presets*. Dichos *presets* son muy específicos y hacen que la herramienta sea mucho más modular y extensible. 
+
+Así que si queremos trabajar con ECMAScript 6, deberemos instalar el preset correspondiente. Lo haremos mediante la siguiente instrucción de línea de comandos:
+
+```terminal
+$ npm install --save-dev babel-preset-es2015
+```
+
+
 
     TODO: Hablar de .babelrc
