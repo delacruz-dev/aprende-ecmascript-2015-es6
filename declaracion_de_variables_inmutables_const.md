@@ -14,4 +14,7 @@ En este ejemplo vemos cómo desde el momento en que declaramos la constante `HEL
     const PI;
     PI = 3.15;
     // Dará ERROR, ya que ha de asignarse un valor en la declaración
+})();
 ```
+
+Por convención las variable inmutables las definiremos en mayúsculas.
