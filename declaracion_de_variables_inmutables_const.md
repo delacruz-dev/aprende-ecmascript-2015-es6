@@ -3,8 +3,8 @@
 Hay dos formas de resolver el problema del **hoisting**: Acotando el ámbito de definición de las variables con `let` o impidiendo que una variable se modifique a lo largo del código. Para este último caso, se ha introducido la nueva palabra reservada `const`, que permite crear variables de solo lectura cuyo valor no puede ser modificado. Veamos un ejemplo:
 ```javascript
 (function(){
-    const HELLO = "hello world";
-    HELLO = "hola mundo";
+    const HELLO = 'hello world';
+    HELLO = 'hola mundo';
     // Dará ERROR, ya que es de sólo lectura
 })();
 ```
