@@ -9,12 +9,12 @@ En ES5, si queríamos crear un string con contenido no estático, no había much
 ```javascript
 // ES5
 var dani = {
-    name: "Daniel",
+    name: 'Daniel',
     age: 32
 };
 
 var greet = function(person) {
-    return "Hello! My name is " + person.name + " and I'm " + dani.age + " years old";
+    return 'Hello! My name is ' + person.name + ' and I´m ' + dani.age + ' years old';
 };
 
 greet(dani);
@@ -33,10 +33,10 @@ También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
 ```javascript
 // ES5
-var quijote = "En un lugar" +
-" de la mancha" +
-", de cuyo nombre" +
-" no quiero acordarme";
+var quijote = 'En un lugar' +
+' de la mancha' +
+', de cuyo nombre' +
+' no quiero acordarme';
 ```
 
 A esto:
@@ -48,6 +48,7 @@ var quijote = `En un lugar
 , de cuyo nombre
  no quiero acordarme`;
 ```
+
 ## Plantillas de cadena de texto con postprocesador
 Una forma más avanzada de plantillas de cadenas de texto son aquellas que contienen una función de postprocesado . Con ellas es posible modificar la salida de las plantillas, usando una función. El primer argumento contiene un array con las cadenas de texto de la plantilla ("Hola" y "mundo" en el ejemplo). El segundo y subsiguientes argumentos con los valores procesados ( ya cocinados ) de las expresiones de la plantilla (en este caso "15" y "50"). Finalmente, la función devuelve la cadena de texto manipulada. El nombre "tag" de la función no es nada especial, se puede usar cualquier nombre de función en su lugar.
 
