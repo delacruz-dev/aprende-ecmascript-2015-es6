@@ -5,7 +5,7 @@ Ahora con ECMAScript 6 podemos declarar variables utilizando la palabra reservad
 ```javascript
 (function() {
     if(true){
-        let x = "hola mundo";
+        let x = 'hola mundo';
     }
     console.log(x);
     // Da error, porque "x" ha sido definida dentro del "if"
@@ -18,10 +18,10 @@ En el siguiente ejemplo la consola imprime `Hola Dani`, ya que la variable `x` e
 
 ```javascript
 (function() {
-    let x = "Hola Dani";
+    let x = 'Hola Dani';
     
     if(true) {
-        let x = "Hola Joan";
+        let x = 'Hola Joan';
     }
     console.log(x);
     // Imprime en consola Hola Dani
