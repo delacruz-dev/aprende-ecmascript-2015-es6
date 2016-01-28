@@ -6,7 +6,7 @@ Tomemos como ejemplo la siguiente función en ES5:
 (function() {
     console.log(x); // x no está definida aún.
     if(true) {
-        var x = "hola mundo";
+        var x = 'hola mundo';
     }
     console.log(x);
     // Imprime "hola mundo", porque "var" hace que la variable sea global a la función
