@@ -6,8 +6,8 @@ Veamos un ejemplo:
 
 ```javascript
 (function(){
-    const HELLO = "hello world";
-    HELLO = "hola mundo";
+    const HELLO = 'hello world';
+    HELLO = 'hola mundo';
     // Dará ERROR, ya que es de sólo lectura
 })();
 ```
