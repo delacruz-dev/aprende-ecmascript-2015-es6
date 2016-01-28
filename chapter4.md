@@ -8,7 +8,7 @@ Con ECMAScript 6 se ha tratado de dar respuesta a algunas de las necesidades má
 El constructor de una plantilla de texto se invoca delimitando la string con (` ` `). Es decir, lo que antes de ES2015 hubiese sido:
 
 ```javascript
-var hello = "Hola Mundo";
+var hello = 'Hola Mundo';
 // o bien
 var hello = 'Hola Mundo';
 ```
@@ -24,7 +24,7 @@ También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
 ```javascript
 // ES5
-var text = ["En un lugar", "de la mancha,", "de cuyo nombre", "no quiero acordarme"].join("\n");
+var text = ['En un lugar', 'de la mancha,', 'de cuyo nombre', 'no quiero acordarme'].join("\n");
 ```
 
 A esto:
@@ -44,12 +44,12 @@ En ES5, si queríamos crear un string con contenido no estático, no había much
 ```javascript
 // ES5
 var dani = {
-    name: "Daniel",
+    name: 'Daniel',
     age: 32
 };
 
 var greet = function(person) {
-    return "Hello! My name is " + person.name + " and I'm " + dani.age + " years old";
+    return 'Hello! My name is ' + person.name + ' and I\'m ' + dani.age + " years old';
 };
 
 greet(dani);
