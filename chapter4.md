@@ -49,7 +49,7 @@ var dani = {
 };
 
 var greet = function(person) {
-    return 'Hello! My name is ' + person.name + ' and I\'m ' + dani.age + " years old';
+    return 'Hello! My name is ' + person.name + ' and I\'m ' + person.age + ' years old';
 };
 
 greet(dani);
