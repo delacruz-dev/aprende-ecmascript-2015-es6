@@ -20,7 +20,6 @@ En este ejemplo vemos cómo desde el momento en que declaramos la constante `HEL
     PI = 3.15;
     // Dará ERROR, ya que ha de asignarse un valor en la declaración
 })();
-<<<<<<< HEAD
 ```
 
 Por convención las variable inmutables las definiremos en mayúsculas.
