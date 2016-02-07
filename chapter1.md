@@ -1,1 +1,1 @@
-# Capítulo 1: Introducción a ECMAScript 6
+# Introducción a ECMAScript 6
