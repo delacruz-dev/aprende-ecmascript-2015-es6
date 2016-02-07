@@ -1,5 +1,6 @@
 # Desestructuración de objetos
 ```javascript
+// ES6
 var persona = {nombre: 'Dani', apellidos: 'de la Cruz'};
 var {nombre, apellidos} = persona;
 
