@@ -7,3 +7,4 @@ Las funciones flecha se comportan de forma sensiblemente distinta a las funcione
 * **No pueden llamarse con `new`**: Al no tener un método constructor, no pueden ser utilizadas como constructores. Las funciones flecha lanzarán un error cuando se utilicen con `new`.
 * **No hay prototipo**: Al no disponer de constructor, tampoco es necesario un prototipo. Por lo tanto, no existirá la propiedad `prototype`en una función flecha.
 * **No crean un nuevo contexto**. El valor de `this`, `super`, `arguments` y `new.target` dentro de la función será el mismo que el de la función tradicional (*non-arrow*) más cercana.
+* 
