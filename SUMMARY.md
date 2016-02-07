@@ -21,7 +21,7 @@
 * [Capítulo 6: Operador de propagación](chapter6.md)
    * [Sintaxis del operador de propagación](sintaxis_del_operador_de_propagacion.md)
    * [El operador de propagación para propiedades de objetos](operador_de_propagacion_para_propiedades_de_objetos.md)
-* [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
+* [Capítulo 7: Arrow Functions y ámbito léxico](chapter7.md)
 * [Capítulo 9: Clases](chapter9.md)
 * [Capítulo 10: Object literals](chapter10.md)
 * [Capítulo 11: Símbolos](chapter11.md)
