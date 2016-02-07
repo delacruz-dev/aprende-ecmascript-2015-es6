@@ -100,6 +100,7 @@ Obviamente, este tipo de comportamiento no es demasiado útil, pero el límite d
 Podríamos, por ejemplo pensar en cómo haríamos una función de internacionalización (i18n) de literales para nuestra aplicación. Con una función de etiquetado en todos nuestros strings, podríamos devolver en tiempo de ejecución el literal adecuado a la cultura del usuario.
 
 Una aproximación muy sencilla podría ser la siguiente:
+
 ```javascript
 // ES6
 const dict = {
