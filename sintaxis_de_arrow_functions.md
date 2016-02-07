@@ -15,3 +15,9 @@ var echo = function(text) {
     return text;
 };
 ```
+
+En ambos casos, la ejecución de la función daría la siguiente salida:
+
+```javascript
+console.log(echo('Hola Mundo!')); // Hola Mundo!
+```
