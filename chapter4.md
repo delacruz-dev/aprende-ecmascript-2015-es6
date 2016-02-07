@@ -77,7 +77,7 @@ Dichas funciones nos permiten procesar la cadena de texto antes de que sea consu
 
 ```javascript
 
-function tag(strings, ...values) { }
+function tag(strings, values) { }
 ```
 
 ## Plantillas de cadena de texto con postprocesador
