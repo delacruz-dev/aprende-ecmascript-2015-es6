@@ -48,3 +48,5 @@ const expand = (rectangle) => {
 var rectangle = { x: 1, y: 2 };
 console.log(expand(rectangle));
 ```
+
+// TODO: Completar: https://leanpub.com/understandinges6/read/#leanpub-auto-arrow-functions
