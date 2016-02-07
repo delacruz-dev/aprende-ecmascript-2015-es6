@@ -1,4 +1,4 @@
-# Capítulo 7: Spread operator
+# Capítulo 6: Spread operator
 
 El *spread operator* nos permite una aproximación mucho más directa al acceso del contenido dentro de un array o de cualquier objeto. Veamos cómo funciona:
 
