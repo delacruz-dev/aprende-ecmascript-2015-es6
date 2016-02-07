@@ -18,7 +18,7 @@
    * [Desestructuración de Arrays](desestructuracion_de_arrays.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
    * [Parámetros por defecto en funciones](parametros_por_defecto_en_funciones.md)
-* [Capítulo 6: Operador de propagación](chapter6.md)
+* [Capítulo 6: Operador de propagación](chapter6md.md)
    * [El operador de propagación para propiedades de objetos](operador_de_propagacion_para_propiedades_de_objetos.md)
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * [Capítulo 9: Clases](chapter9.md)
