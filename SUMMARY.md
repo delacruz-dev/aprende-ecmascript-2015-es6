@@ -12,6 +12,7 @@
 * [Capítulo 5: Desestructuración](chapter5.md)
    * [Parámetros por defecto](parametros_por_defecto.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
+   * Desestructuración de Arrays
 * [Capítulo 6: Parámetros por defecto](chapter6.md)
 * [Capítulo 7: Spread operator](chapter7.md)
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
