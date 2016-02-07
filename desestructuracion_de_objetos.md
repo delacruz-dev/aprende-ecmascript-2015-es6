@@ -12,6 +12,7 @@ Tal y como puedes ver, podemos crear variables al vuelo a partir de un objeto de
 Bueno, en esta vida casi todo tiene arreglo:
 
 ```javascript
+// ES6
 var {nombre: name, apellidos: surname} = persona;
 console.log(name); // Dani
 console.log(surname); // de la Cruz
