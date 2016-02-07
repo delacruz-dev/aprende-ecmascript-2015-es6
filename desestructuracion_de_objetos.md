@@ -37,4 +37,4 @@ Como ves, la función `suma` espera un objeto con dos propiedades: `a` y `b`, cu
 // ES6
 console.log(suma({a: a, b: b})); // 5
 ```
-Obviamente, nadie utilizará esta segunda forma, ya que ECMAScript asigna automáticamente los valores a propiedades del mismo nombre.
+Obviamente, nadie utiliza esta segunda forma, ya que ECMAScript asigna automáticamente los valores a propiedades del mismo nombre.
