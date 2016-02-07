@@ -1,6 +1,6 @@
 # Summary
 
-* [Introducción](README.md)
+* [Aprende ECMAScript 2015 (ES6)](README.md)
 * [Capítulo 1: Introducción a ECMAScript 6](chapter1.md)
 * [Capítulo 2: Configuración y uso de Babel](chapter2.md)
    * [Instalación de Babel](instalacion_de_babel.md)
