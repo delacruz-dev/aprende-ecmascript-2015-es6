@@ -76,6 +76,7 @@ Una forma avanzada de plantillas de texto son las plantillas de texto *etiquetad
 ```javascript
 function tag(string, values) { }
 ```
+
 No hace falta que la función se llame `tag`, podemos llamarla como queramos. Tan solo la he llamado así de forma ilustrativa.
 
 El primer argumento contiene un array de literales y el segundo, cada uno de los valores de substitución. 
