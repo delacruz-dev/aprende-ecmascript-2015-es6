@@ -32,5 +32,6 @@ console.log(sum(1, 1)); // 2
 O ninguno, claro:
 
 ```javascript
-const greet = () => 'Hola, forastero';
+const greet = () => 'Hola, forastero!';
+console.log(greet()); // Hola, forastero!
 ```
