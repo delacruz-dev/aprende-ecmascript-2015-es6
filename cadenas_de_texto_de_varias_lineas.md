@@ -1,6 +1,6 @@
 # Cadenas de texto de varias líneas
 
-Podemos disponer de strings de múltiples líneas, y pasar de esto:
+Podemos disponer de cadenas de texto de múltiples líneas, y pasar de esto:
 
 ```javascript
 // ES5
