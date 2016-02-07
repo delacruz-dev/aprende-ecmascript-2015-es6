@@ -20,6 +20,7 @@
    * [Parámetros por defecto en funciones](parametros_por_defecto_en_funciones.md)
 * [Capítulo 6: Operador de propagación](chapter6md.md)
    * [El operador de propagación para propiedades de objetos](operador_de_propagacion_para_propiedades_de_objetos.md)
+   * Sintaxis del operador de propagación
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
 * [Capítulo 9: Clases](chapter9.md)
 * [Capítulo 10: Object literals](chapter10.md)
