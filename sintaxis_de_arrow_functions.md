@@ -35,3 +35,16 @@ O ninguno, claro:
 const greet = () => 'Hola, forastero!';
 console.log(greet()); // Hola, forastero!
 ```
+
+Si queremos realizar operaciones más complicadas, podemos hacerlo con corchetes y definiendo un valor de retorno:
+
+```javascript
+const expand = (rectangle) => {
+    rectangle.x += 10;
+    rectangle.y +=20;
+    return rectangle;
+};
+
+var rectangle = { x: 1, y: 2 };
+console.log(expand(rectangle));
+```
