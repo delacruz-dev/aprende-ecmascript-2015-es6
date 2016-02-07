@@ -2,6 +2,7 @@
 
 * [Aprende ECMAScript 2015 (ES6)](README.md)
 * [Capítulo 1: Introducción a ECMAScript 6](chapter1.md)
+   * The TC39 Process
 * [Capítulo 2: Configuración y uso de Babel](chapter2.md)
    * [Instalación de Babel](instalacion_de_babel.md)
 * [Capítulo 3: Variables de ámbito local: `let` y `const`](chapter3.md)
