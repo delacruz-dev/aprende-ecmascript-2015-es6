@@ -21,3 +21,9 @@ En ambos casos, la ejecución de la función daría la siguiente salida:
 ```javascript
 console.log(echo('Hola Mundo!')); // Hola Mundo!
 ```
+
+Como con cualquier función, podemos pasar tantos argumentos como queramos a la función:
+
+```javascript
+const sum = (a, b) => a + b;
+```
