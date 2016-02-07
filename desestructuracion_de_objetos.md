@@ -29,5 +29,12 @@ function suma({a, b} = {}) {
 
 var a = 2;
 var b = 3;
-console.log(suma({a, b}));
+console.log(suma({a, b})); // 5
 ```
+Como ves, la función `suma` espera un objeto con dos propiedades: `a` y `b`, cuyo valor desconoce. Pero tan solo declarando dos variables del mismo nombre, podemos crear un objeto al vuelo y pasárselo como argumento a la función. El código siguiente es equivalente al anterior, pero con algo más de ceremonia:
+
+```javascript
+// ES6
+console.log(suma({a: a, b: b})); // 5
+```
+Obviamente, nadie utilizará esta segunda forma, ya que ECMAScript asigna automáticamente los valores a propiedades del mismo nombre.
