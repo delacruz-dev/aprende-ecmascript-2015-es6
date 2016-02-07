@@ -17,7 +17,6 @@
 * [Capítulo 5: Desestructuración](chapter5.md)
    * [Desestructuración de Arrays](desestructuracion_de_arrays.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
-   * [Parámetros por defecto](parametros_por_defecto.md)
    * [Parámetros por defecto en funciones](parametros_por_defecto_en_funciones.md)
 * [Capítulo 6: Operador de propagación](chapter6.md)
    * [El operador de propagación para propiedades de objetos](operador_de_propagacion_para_propiedades_de_objetos.md)
