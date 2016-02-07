@@ -46,3 +46,4 @@ function f(x, y, z) {
 }
 console.log(f(...[1, 2, 3])); // 6
 ```
+
