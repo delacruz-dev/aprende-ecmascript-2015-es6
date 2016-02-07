@@ -23,7 +23,7 @@
    * [El operador de propagación para propiedades de objetos](operador_de_propagacion_para_propiedades_de_objetos.md)
 * [Capítulo 7: Arrow Functions y ámbito léxico](chapter7.md)
    * [Diferencias entre arrow functions y funciones clásicas](diferencias_entre_arrow_functions_y_funciones_clas.md)
-   * Sintaxis de arrow functions
+   * [Sintaxis de arrow functions](sintaxis_de_arrow_functions.md)
 * [Capítulo 9: Clases](chapter9.md)
 * [Capítulo 10: Object literals](chapter10.md)
 * [Capítulo 11: Símbolos](chapter11.md)
