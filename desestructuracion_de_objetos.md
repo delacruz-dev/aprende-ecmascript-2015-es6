@@ -16,3 +16,5 @@ var {nombre: name, apellidos: surname} = persona;
 console.log(name); // Dani
 console.log(surname); // de la Cruz
 ```
+
+Este comportamiento es especialmente útil a la hora de pasar parámetros a funciones, como veremos a continuación.
