@@ -1,4 +1,4 @@
-# Capítulo 8: Arrow Functions y ámbito léxico
+# Capítulo 7: Arrow Functions y ámbito léxico
 
 Una de las novedades más interesantes de ECMAScript 6 son las denominadas **funciones flecha**, o *arrow functions*. Las funciones flecha son, como su nombre indica, definidas mediante una nueva sintaxis que utiliza una "flecha" (`=>`) a la que estarás acostumbrado si has trabajado en otros lenguajes con [*expresiones lamda*](https://msdn.microsoft.com/es-es/library/bb397687.aspx).
 
