@@ -17,6 +17,7 @@
    * [Desestructuración de Arrays](desestructuracion_de_arrays.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
    * [Parámetros por defecto](parametros_por_defecto.md)
+   * Parámetros por defecto en funciones
 * [Capítulo 6: Parámetros por defecto](chapter6.md)
 * [Capítulo 7: Spread operator](chapter7.md)
 * [Capítulo 8: Arrow Functions y ámbito léxico](chapter8.md)
