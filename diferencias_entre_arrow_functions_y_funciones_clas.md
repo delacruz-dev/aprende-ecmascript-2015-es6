@@ -9,3 +9,4 @@ Las funciones flecha se comportan de forma sensiblemente distinta a las funcione
 * **No crean un nuevo contexto**. El valor de `this`, `super`, `arguments` y `new.target` dentro de la función será el mismo que el de la función tradicional (*non-arrow*) más cercana.
 * **No puedes cambiar `this`**: El valor de `this` dentro de la función flecha permanece inmutable a lo largo de todo el ciclo de vida de la función.
 * **No hay objeto `arguments`**: Tan solo es posible proporcionarle parámetros a una función flecha mediante parámetros nombrados y *rest parameters*.
+* **No es posible duplicar parámetros con el mismo nombre**: Tanto en modo estricto como no estricto, a diferencia de las funciones clásicas, que no lo permiten tan solo en modo estricto.
