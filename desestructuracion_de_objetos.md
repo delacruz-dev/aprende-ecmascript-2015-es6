@@ -18,3 +18,14 @@ console.log(surname); // de la Cruz
 ```
 
 Este comportamiento es especialmente útil a la hora de pasar parámetros a funciones, como veremos a continuación.
+
+```javascript
+// ES6
+function suma({a, b} = {}) {
+  return a + b;
+};
+
+var a = 2;
+var b = 3;
+console.log(suma({a, b}));
+```
