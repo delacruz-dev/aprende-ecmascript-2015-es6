@@ -1,6 +1,6 @@
-# Capítulo 6: Spread operator
+# Capítulo 6: Operador de propagación
 
-El *spread operator* nos permite una aproximación mucho más directa al acceso del contenido dentro de un array o de cualquier objeto. Veamos cómo funciona:
+El operador de propagación, o *spread operator*, nos permite una aproximación mucho más directa al acceso del contenido dentro de un array o de cualquier objeto. Veamos cómo funciona:
 
 ```javascript
 const values = [1, 2, 3, 4];
