@@ -70,23 +70,11 @@ Esto tiene una ventaja añadida: la de poder hacer sustituciones no solo por un 
 let myAge = `Mi edad es ${person.age + 3} años`;
 ```
 
-## Funciones de posprocesado
-Sin duda la auténtica potencia de los nuevos *template strings* que permite utilizar ES2015 se hace evidente cuando utilizamos las funciones de posprocesado.
-
-Dichas funciones nos permiten procesar la cadena de texto antes de que sea consumida por el cliente.
-
-```javascript
-
-function tag(strings, values) { }
-```
-
 ## Plantillas de cadena de texto con postprocesador
 Una forma avanzada de plantillas de texto son las plantillas de texto *etiquetadas*. Con ellas seremos capaces de modificar la salida de las plantillas de texto utilizando una función. Dicha función debe tener la siguiente firma:
 
 ```javascript
-function tag(string, values) {
-    ...
-}
+function tag(string, values) { }
 ```
 No hace falta que la función se llame `tag`, podemos llamarla como queramos. Tan solo la he llamado así de forma ilustrativa.
 
