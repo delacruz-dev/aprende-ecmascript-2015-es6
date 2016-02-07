@@ -26,4 +26,11 @@ Como con cualquier función, podemos pasar tantos argumentos como queramos a la 
 
 ```javascript
 const sum = (a, b) => a + b;
+console.log(sum(1, 1)); // 2
+```
+
+O ninguno, claro:
+
+```javascript
+const greet = () => 'Hola, forastero';
 ```
