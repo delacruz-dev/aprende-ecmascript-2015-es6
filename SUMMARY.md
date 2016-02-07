@@ -12,6 +12,7 @@
    * [Sintaxis para plantillas de cadenas de texto](sintaxis_para_plantillas_de_cadenas_de_texto.md)
    * [Cadenas de texto de varias líneas](cadenas_de_texto_de_varias_lineas.md)
    * [Interpolación de parámetros en plantillas de cadenas de texto](interpolacion_de_parametros_en_plantillas_de_string.md)
+   * Plantillas de string con funciones de etiquetado
 * [Capítulo 5: Desestructuración](chapter5.md)
    * [Desestructuración de Arrays](desestructuracion_de_arrays.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
