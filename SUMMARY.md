@@ -9,7 +9,7 @@
    * [Declaración de variables de ámbito local: `let`](declaracion_de_variables_de_ambito_local_let.md)
    * [Declaración de variables inmutables con `const`](declaracion_de_variables_inmutables_const.md)
 * [Capítulo 4: Plantillas de cadenas de texto](chapter4.md)
-   * Sintaxis para plantillas de cadenas de texto
+   * [Sintaxis para plantillas de cadenas de texto](sintaxis_para_plantillas_de_cadenas_de_texto.md)
 * [Capítulo 5: Desestructuración](chapter5.md)
    * [Desestructuración de Arrays](desestructuracion_de_arrays.md)
    * [Desestructuración de objetos](desestructuracion_de_objetos.md)
