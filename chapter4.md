@@ -5,23 +5,7 @@ La manipulación de **strings**, o cadenas de texto en JavaScript siempre ha est
 Con ECMAScript 6 se ha tratado de dar respuesta a algunas de las necesidades más básicas de los programadores a la hora de trabajar con strings, introduciendo la característica de las **plantillas de cadenas de texto**. 
 
 
-## Strings de múltiples líneas
-También podemos disponer de strings de múltiples líneas, y pasar de esto:
 
-```javascript
-// ES5
-var text = ['En un lugar', 'de la mancha,', 'de cuyo nombre', 'no quiero acordarme'].join('\n');
-```
-
-A esto:
-
-```javascript
-// ES6
-var quijote = `En un lugar
- de la mancha, 
- de cuyo nombre
- no quiero acordarme`;
-```
 
 ## Interpolación
 
