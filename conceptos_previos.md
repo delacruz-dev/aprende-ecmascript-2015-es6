@@ -21,6 +21,17 @@ La función Vehicle es una función normal, pero cuando la utilizamos mediante l
 
 El resultado de `new Vehicle()` es este nuevo objeto.
 
+```javascript
+typeof Vehicle;
+> 'function'
+typeof Vehicle();
+> 'undefined'
+typeof new Vehicle();
+> 'object'
+```
+
+
+
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
 
