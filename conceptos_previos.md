@@ -33,6 +33,16 @@ La diferencia entre las tres llamadas es que mientras `Vehicle` es la definició
 
 ** NOTA: No es aconsejable retornar ningún valor en funciones constructoras, ya que el valor retornado sobreescribirá la instancia del objeto creado**
 
+### La propiedad `constructor`
+Establecer la propiedad `constructor` en el objeto creado significa dos cosas:
+
+```javascript
+vehicle.constructor == Vehicle // true
+vehicle.constructor instanceof Vehicle // true
+```
+
+El objeto creado tendrá una propiedad `constructor` bastante especial. No aparecerá si enumeramos las propiedades del objeto. 
+
 
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
