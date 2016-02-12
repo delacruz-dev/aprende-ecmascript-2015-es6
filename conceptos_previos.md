@@ -95,6 +95,31 @@ Vehicle.prototype.go = function go() { return "Vroom!" };
 truck.go(); // Vroom!
 ```
 
+### Se crea un contexto para el objeto construido
+Dentro de la función constructora, `this` adquiere el valor del objeto construido, creando un contexto específico para dicho objeto:
+
+```javascript
+var Person = function Person(name){
+    this.name = name;
+}
+
+var myself = new Person('Dani');
+
+this.name; // undefined
+this.myself.name; // Dani
+```
+
+La propiedad `name` solo existe dentro del contexto del objeto `myself`. A diferencia de una llamada a una función no constructora:
+
+```javascript
+function Test(foo){
+    this.foo = foo;
+}
+
+Dummy('bar');
+this.foo; // bar
+```
+
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
 
