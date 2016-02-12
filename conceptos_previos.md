@@ -61,6 +61,16 @@ motorcycle instanceof Vehicle // true
 
 Como puedes comprobar tú mismo, `motorcycle` sigue siendo un vehículo. El constructor subyacente no es algo que podamos modificar tras crear una instancia de un objeto, solo podemos hacerlo en tiempo de construcción del mismo objeto.
 
+### Prototipo delegado
+En JavaScript una función no es más que un tipo especial de objeto. Y como todos los objetos, una función puede tener propiedades. Las funciones en JavaScript obtienen automáticamente una propiedad llamada `prototype`, la cual es a su vez un objeto vacío. Este objeto recibe un tratamiento especial.
+
+Cunado un objeto es construido, *hereda todas las propiedades del prototipo de su constructor*. Veamos un ejemplo:
+
+```javascript
+Vehicle.prototype.wheelCount = 4;
+var truck = new Vehicle();
+truck.wheelCount; // 4
+```
 
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
