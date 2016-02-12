@@ -180,4 +180,10 @@ toledo.color = 'blue';
 ibiza.color; // white
 leon.color; // white
 toledo.color; // blue
+
+car.color = 'black';
+
+ibiza.color; // black
+leon.color; // black
+toledo.color; // blue
 ```
