@@ -92,6 +92,14 @@ No es más que una función constructora, tal y como ya existían en ES5. Sin em
 
 ```javascript
 // ES6
+class Example extends Sample {
+    constructor(key, value){
+        super(value);
+        this.key = key;
+    }
+}
+
+example// Example { value: 123, key: 987 }
 ```
 
 ### Métodos estáticos
