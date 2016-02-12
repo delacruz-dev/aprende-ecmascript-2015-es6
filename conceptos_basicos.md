@@ -35,7 +35,7 @@ Point();
 > TypeError: Classes can’t be function-called
 ```
 
-## Subclases
+## Sintaxis de declaración de subclases
 La forma de hacer subclases sería la siguiente:
 
 ```javascript
