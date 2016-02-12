@@ -167,3 +167,17 @@ function clone(parent){
     return new Clone();
 }
 ```
+
+Con nuestra función de clonado, podemos hacer nuevas instancias como churros que hereden las propiedades de un objeto original:
+
+```javascript
+var car = { color: 'white' };
+var ibiza = clone(car);
+var leon = clone(car);
+var toledo = clone(car);
+toledo.color = 'blue';
+
+ibiza.color; // white
+leon.color; // white
+toledo.color; // blue
+```
