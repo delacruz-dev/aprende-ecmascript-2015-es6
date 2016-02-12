@@ -49,4 +49,6 @@ class ColorPoint extends Point {
 
 const cp = new ColorPoint(25, 8, 'green');
 cp.toString(); // (25, 8) in green
+cp instanceof ColorPoint // true
+cp instanceof Point // true
 ```
