@@ -9,7 +9,7 @@ var Vehicle = function Vehicle() {
     // ...
 }
 
-var vehicle = new Vehicle();
+var motorcycle = new Vehicle();
 ```
 
 La función Vehicle es una función normal, pero cuando la utilizamos mediante la palabra reservada `new`, además de ejecutar el código del cuerpo de la función, JavaScript hace que pasen cuatro cosas:
