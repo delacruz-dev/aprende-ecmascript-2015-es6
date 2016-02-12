@@ -67,3 +67,30 @@ Los tipos de métodos que puede contener el cuerpo de una función son:
 * métodos estáticos
 * métodos de prototipo
 
+```javascript
+class Sample{
+    constructor(value){
+        this.value = value;
+    }
+    static staticMethod(){
+        return 'this is a class method';
+    }
+    prototypeMethod(){
+        return 'this is a prototype method';
+    }
+}
+```
+
+### Método constructor de clase
+No es más que una función constructora, tal y como ya existían en ES5. Sin embargo, el constructor de una clase tiene la particularidad de poder llamar a `super`, lo cual nos da la ventaja de poder inicializar las propiedades de la clase padre (o "superclase"). Algo que no era posible con el estándar anterior del lenguaje.
+
+```javascript
+// ES5
+```
+
+```javascript
+// ES6
+```
+
+### Métodos estáticos
+Las propiedades estáticas, o propiedades de clase, son propiedades 
