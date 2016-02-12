@@ -26,6 +26,7 @@ Si obtienes el tipo de `Point`, te darás cuenta de que es una función.
 ```javascript
 typeof Point; // function
 ```
+
 Pero no podemos utilizarla directamente. Tenemos que crear una instancia utilizando `new`: 
 
 ```javascript
