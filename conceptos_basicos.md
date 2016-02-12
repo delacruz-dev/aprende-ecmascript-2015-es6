@@ -55,3 +55,5 @@ cp instanceof ColorPoint // true
 cp instanceof Point // true
 ```
 La "herencia" de propiedades de la clase se realiza mediante la palabra reservada `extends`. Esto provoca que el nuevo objeto instanciado sea tanto del tipo asignado como del tipo heredado.
+
+En el constructor, mediante la sentencia `super()` se llama a la función constructora de la clase padre.
