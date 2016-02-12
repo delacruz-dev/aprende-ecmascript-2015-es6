@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "structured-toc"
+        "structured-toc",
+        "atoc"
     ],
     "pluginsConfig": {}
 }
