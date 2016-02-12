@@ -71,6 +71,7 @@ Vehicle.prototype.wheelCount = 4;
 var truck = new Vehicle();
 truck.wheelCount; // 4
 ```
+La instancia del camión (`truck`) ha recogido las propiedades del prototipo de `Vehicle`.
 
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
