@@ -39,7 +39,7 @@ Establecer la propiedad `constructor` en el objeto creado significa dos cosas:
 ```javascript
 motorcycle.constructor == Vehicle // true
 motorcycle instanceof Vehicle // true
-motorcycle```
+```
 
 El objeto creado tendrá una propiedad `constructor` bastante especial. No aparecerá si enumeramos las propiedades del objeto, pero podemos crearla y asignarla al nuevo objeto, sobreescribiendo la propiedad original:
 
