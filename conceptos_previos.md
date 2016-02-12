@@ -51,6 +51,16 @@ motorcycle.constructor = Postman;
 motorcycle; // Postman { constructor: [Function: Postman] }
 ```
 
+En el fragmento de código anterior hemos creado una nueva función constructora llamada `Postman` (cartero, en inglés). Posteriormente, asignamos a esa función una propiedad constructor de nuestro objeto `motorcycle`. Si evaluamos ahora `motorcycle`, veremos que ahora tiene una propiedad `constructor` que no es más que la función `Postman`. Pero, ¿ha cambiado el tipo de nuestro objeto?
+
+```javascript
+motorcycle.constructor == Postman // true
+motorcycle instanceof Postman // false
+motorcycle instanceof Vehicle // true
+```
+
+Como puedes comprobar tú mismo, `motorcycle` sigue siendo un vehículo. El constructor subyacente no es algo que podamos modificar tras crear una instancia de un objeto, solo podemos hacerlo en tiempo de construcción del mismo objeto.
+
 
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
