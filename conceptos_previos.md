@@ -1,4 +1,5 @@
 # Conceptos previos de orientación a objetos en JavaScript
+
 <!-- toc -->
 
 ## Qué es un constructor?
