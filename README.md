@@ -7,3 +7,5 @@ Y soy optimista al respecto, ya que lo voy a tener que hacer *por narices*, al e
 Ese al menos es mi objetivo al comenzar este libro. No sé si lo terminaré. No sé si tendrá la calidad suficiente para servirle a alguien, pero sí tengo claro que pocas veces voy a tener una oportunidad como esta para forzarme a escribir algo así, ya que lo voy a tener que hacer sí o sí para el curso. Así que, ¡Habrá que aprovecharlo!
 
 Si estás leyendo esto antes de terminar el libro, espero que disfrutes con su evolución. Y si decides ayudarme, ¡bienvenida sea!
+
+<!-- toc -->
