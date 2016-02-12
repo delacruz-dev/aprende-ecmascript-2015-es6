@@ -41,8 +41,11 @@ Vehicle.prototype = {
 }
 ```
 
-## Herencia (subclassing)
+## Subclases
+La flexibilidad de JavaScript también nos permite crear algo muy cercano a lo que sería "herencia" en otros lenguajes de programación orientados a objetos, aunque con sus limitaciones.
+
 ```javascript
+ES5
 var Car = function Car() {};
 Car.prototype = new Vehicle("tan");
 Car.prototype.honk = function honk() { return "BEEP!" };
@@ -53,3 +56,4 @@ car.color;              // "tan"
 car instanceof Car;     // true
 car instanceof Vehicle; // true
 ```
+El problema con esta aproximación es que el constructor de `Vehicle` solo puede llamarse una vez: para configurar el prototipo de `Car`. Necesitamos asignar el color del coche en ese momento, así que no podemos tener distintos coches de distintos colores. Por eso no llega a ser una herencia pura, en el sentido más estricto del paradigma de orientación a objetos. Algunos *frameworks* de JavaScript han resuelto esto definiendo sus propias implementaciones de clase.
