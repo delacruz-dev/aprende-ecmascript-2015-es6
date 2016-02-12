@@ -33,3 +33,17 @@ A diferencia de las funciones constructoras, no podemos utilizarla directamente.
 Point();
 > TypeError: Classes can’t be function-called
 ```
+
+La forma de hacer subclases sería la siguiente:
+
+```javascript
+class ColorPoint extends Point {
+    constructor(x, y, color) {
+        super(x, y);
+        this.color = color;
+    }
+    toString() {
+        return `${super.toString()} in ${this.color}`;
+    }
+}
+```
