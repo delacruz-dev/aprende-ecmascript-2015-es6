@@ -101,3 +101,10 @@ example// Example { value: 123, key: 987 }
 
 ### Métodos estáticos
 Las propiedades estáticas, o propiedades de clase, son propiedades 
+
+```javascript
+> Sample.staticMethod();
+'this is a class method'
+> Sample.prototypeMethod();
+TypeError: Sample.prototypeMethod is not a function
+```
