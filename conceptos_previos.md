@@ -46,6 +46,9 @@ El objeto creado tendrá una propiedad `constructor` bastante especial. No apare
 ```javascript
 motorcycle; // {}
 
+var Postman = function Postman() {};
+motorcycle.constructor = Postman;
+motorcycle; // Postman { constructor: [Function: Postman] }
 ```
 
 
