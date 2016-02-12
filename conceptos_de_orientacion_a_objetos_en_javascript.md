@@ -146,12 +146,12 @@ La flexibilidad de JavaScript también nos permite crear algo muy cercano a lo q
 ```javascript
 // ES5
 var Car = function Car() {};
-Car.prototype = new Vehicle("tan");
+Car.prototype = new Vehicle("white");
 Car.prototype.honk = function honk() { return "BEEP!" };
 var car = new Car();
 car.honk();             // "BEEP!"
 car.go();               // "Vroom!"
-car.color;              // "tan"
+car.color;              // "white"
 car instanceof Car;     // true
 car instanceof Vehicle; // true
 ```
