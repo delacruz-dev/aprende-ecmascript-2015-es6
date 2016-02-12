@@ -29,7 +29,9 @@ typeof Vehicle();
 typeof new Vehicle();
 > 'object'
 ```
+La diferencia entre las tres llamadas es que mientras `Vehicle` es la definición de la función, `Vehicle()` representa el valor retornado por la función y en este caso no retornamos nada, así que es `undefined`. Por último, `new Vehicle()`. Devuelve un nuevo objeto que será una instancia de `Vehicle`.
 
+** NOTA: No es aconsejable retornar ningún valor en funciones constructoras, ya que el valor retornado sobreescribirá la instancia del objeto creado**
 
 
 ## Creando clases en JavaScript (ES5)
