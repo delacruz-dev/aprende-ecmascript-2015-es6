@@ -57,3 +57,13 @@ cp instanceof Point // true
 La "herencia" de propiedades de la clase se realiza mediante la palabra reservada `extends`. Esto provoca que el nuevo objeto instanciado sea tanto del tipo asignado como del tipo heredado.
 
 En el constructor, mediante la sentencia `super()` se llama a la función constructora de la clase padre.
+
+## El cuerpo de una definición de clase
+El cuerpo de una clase solo puede contener métodos. Los prototipos que tienen propiedades contenedoras de datos generalmente se consideran un antipatrón, así que esta particularidad de las clases solo refuerza que se siga esta buena práctica.
+
+Los tipos de métodos que puede contener el cuerpo de una función son:
+
+* constructor
+* métodos estáticos
+* métodos de prototipo
+
