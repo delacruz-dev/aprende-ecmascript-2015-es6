@@ -46,4 +46,7 @@ class ColorPoint extends Point {
         return `${super.toString()} in ${this.color}`;
     }
 }
+
+const cp = new ColorPoint(25, 8, 'green');
+cp.toString(); // (25, 8) in green
 ```
