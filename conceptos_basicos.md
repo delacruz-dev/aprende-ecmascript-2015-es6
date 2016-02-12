@@ -21,11 +21,12 @@ var p = new Point(25, 8);
 p.toString(); //(25, 8)
 ````
 
-Si obtienes el tipo de `Point`, te darás cuenta de que es una función.
+Si obtienes el tipo de la clase `Point`, te darás cuenta de que es no es más que una función.
 
 ```javascript
 typeof Point; // function
 ```
+
 A diferencia de las funciones constructoras, no podemos utilizarla directamente. En su lugar, tenemos que crear una instancia utilizando `new`: 
 
 ```javascript
