@@ -71,7 +71,29 @@ Vehicle.prototype.wheelCount = 4;
 var truck = new Vehicle();
 truck.wheelCount; // 4
 ```
+
 La instancia del camión (`truck`) ha recogido las propiedades del prototipo de `Vehicle`.
+
+Ahora es cuando se pone interesante: la nueva instancia no solo copia las propiedades, sino que el objeto está configurado para *delegar* cualquier propiedad que no ha sido explícitamente creada en el prototipo de su constructor. Esto significa que, si cambiamos el prototipo más adelante, veremos los cambios en la instancia:
+
+```javascript
+Vehicle.prototype.wheelCount = 6;
+truck.wheelCount; //6
+```
+
+Por supuesto, también podemos sobreescribirla asignándola explícitamente:
+
+```javascript
+truck.wheelCount = 8;
+truck.wheelCount; // 8
+```
+
+Obviamente, siempre podremos hacer lo mismo con métodos, ya que un método no es más que una función asignada a una propiedad:
+
+```javascript
+Vehicle.prototype.go = function go() { return "Vroom!" };
+truck.go(); // Vroom!
+```
 
 ## Creando clases en JavaScript (ES5)
 Una vez explicados los conceptos anteriores, ya tenemos la capacidad de crear clases en JavaScript. Esta es una manera (no es la única, pero sí una de ellas muy válida):
