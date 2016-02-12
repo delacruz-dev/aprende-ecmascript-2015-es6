@@ -144,7 +144,7 @@ Vehicle.prototype = {
 La flexibilidad de JavaScript también nos permite crear algo muy cercano a lo que sería "herencia" en otros lenguajes de programación orientados a objetos, aunque con sus limitaciones.
 
 ```javascript
-ES5
+// ES5
 var Car = function Car() {};
 Car.prototype = new Vehicle("tan");
 Car.prototype.honk = function honk() { return "BEEP!" };
