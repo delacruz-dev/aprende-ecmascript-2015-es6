@@ -99,6 +99,7 @@ class Example extends Sample {
     }
 }
 
+const example = new Example(987, 123);
 example// Example { value: 123, key: 987 }
 ```
 
