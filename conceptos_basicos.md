@@ -87,10 +87,6 @@ const sample = new Sample(123);
 No es más que una función constructora, tal y como ya existían en ES5. Sin embargo, el constructor de una clase tiene la particularidad de poder llamar a `super`, lo cual nos da la ventaja de poder inicializar las propiedades de la clase padre (o "superclase"). Algo que no era posible con el estándar anterior del lenguaje.
 
 ```javascript
-// ES5
-```
-
-```javascript
 // ES6
 class Example extends Sample {
     constructor(key, value){
