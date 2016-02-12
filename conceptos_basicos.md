@@ -21,7 +21,7 @@ var p = new Point(25, 8);
 p.toString(); //(25, 8)
 ````
 
-Sin embargo, si obtienes el tipo de `Point`, te darás cuenta de que es una función.
+Si obtienes el tipo de `Point`, te darás cuenta de que es una función.
 
 ```javascript
 typeof Point; // function
