@@ -156,3 +156,14 @@ car instanceof Car;     // true
 car instanceof Vehicle; // true
 ```
 El problema con esta aproximación es que el constructor de `Vehicle` solo puede llamarse una vez: para configurar el prototipo de `Car`. Necesitamos asignar el color del coche en ese momento, así que no podemos tener distintos coches de distintos colores. Por eso no llega a ser una herencia pura, en el sentido más estricto del paradigma de orientación a objetos. Algunos *frameworks* de JavaScript han resuelto esto definiendo sus propias implementaciones de clase.
+
+## Función de clonado
+Si no queremos tener la noción de clases y tan solo queremos un objeto que herede propiedades de otro, pero sea capaz de sobreescribirlas, podemos utilizar una función de clonado. La siguiente sería una posible y sencilla implementación:
+
+```javascript
+function clone(parent){
+    var Clone = function() {};
+    Clone.prototype = parent;
+    return new Clone();
+}
+```
