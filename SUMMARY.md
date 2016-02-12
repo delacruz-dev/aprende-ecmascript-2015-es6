@@ -37,5 +37,5 @@
 * [Capítulo 17: Promesas](chapter17.md)
 * [Capítulo 18: Reflection](chapter18.md)
 * [Capítulo 19: Decoradores](chapter19.md)
-* Apéndice 1: Recursos y bibliografía
+* [Apéndice 1: Recursos y bibliografía](apendice_1_recursos_y_bibliografia.md)
 
