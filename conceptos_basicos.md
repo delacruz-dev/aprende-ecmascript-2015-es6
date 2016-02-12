@@ -1,5 +1,6 @@
 # Conceptos básicos
 
+## Sintaxis básica de clases
 El siguiente fragmento de código ilustra cómo definiríamos una clase en JavaScript.
 
 ```javascript
