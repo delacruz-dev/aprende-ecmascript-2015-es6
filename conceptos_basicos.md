@@ -79,6 +79,8 @@ class Sample{
         return 'this is a prototype method';
     }
 }
+
+const sample = new Sample(123);
 ```
 
 ### Método constructor de clase
