@@ -17,7 +17,7 @@ La función Vehicle es una función normal, pero cuando la utilizamos mediante l
 1. Se crea un nuevo objeto
 2. Establece la propiedad `constructor` del objeto a la función `Vehicle`
 3. Configura el objeto para delegar en `Vehicle.prototype`
-4. Llama a `Vehicle()`en el contexto del nuevo objeto
+4. Dentro de la función se crea un contexto para el objeto que se está construyendo.
 
 El resultado de `new Vehicle()` es este nuevo objeto.
 
