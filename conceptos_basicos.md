@@ -121,5 +121,3 @@ sample.staticMethod();
 ```
 
 Fíjate que los métodos estáticos no se transmiten a las instancias de la clase.
-
-## 
