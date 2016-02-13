@@ -28,7 +28,7 @@
    * [Conceptos de orientación a objetos en JavaScript](conceptos_de_orientacion_a_objetos_en_javascript.md)
    * [Conceptos básicos](conceptos_basicos.md)
 * [Capítulo 10: Object literals](chapter10.md)
-   * Mejoras en literales de objetos
+   * [Mejoras en literales de objetos](mejoras_en_literales_de_objetos.md)
 * [Capítulo 11: Símbolos](chapter11.md)
 * [Capítulo 12: Iteradores](chapter12.md)
 * [Capítulo 13: Generadores](chapter13.md)
