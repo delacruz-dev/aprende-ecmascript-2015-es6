@@ -30,7 +30,7 @@
 * [Capítulo 10: Object literals](chapter10.md)
    * [Mejoras en literales de objetos](mejoras_en_literales_de_objetos.md)
 * [Capítulo 11: Símbolos](chapter11.md)
-   * Símbolos en ECMAScript 2015
+   * [Símbolos en ECMAScript 2015](simbolos_en_ecmascript_2015.md)
 * [Capítulo 12: Iteradores](chapter12.md)
 * [Capítulo 13: Generadores](chapter13.md)
 * [Capítulo 14: Colecciones](chapter14.md)
