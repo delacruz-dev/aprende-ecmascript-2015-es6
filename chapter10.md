@@ -90,7 +90,7 @@ const object = {
 Los `getters` y `setters` continúan funcionando exactamente igual que en ES5, aunque con la nueva sintaxis han terminado siendo prácticamente iguales que las definiciones de métodos:
 
 ```javascript
-const obj = {
+const object = {
     get foo(){
         console.log('GET foo');
         return 123;
@@ -101,3 +101,27 @@ const obj = {
 }
 ```
 
+### Atajos de asignación de valores
+Los atajos de valores en las propiedades nos permiten abreviar la definición de una propiedad en un literal de objeto. Si el nombre de la variable que especifica el valor de la propiedad coincide con el de la clave de la propiedad, podemos **omitir la clave**:
+
+```javascript
+// ES6
+const x = 4;
+const y = 1;
+const object = { x, y };
+```
+Lo anterior sería equivalente a:
+
+```javascript
+// ES6
+const object = { x: x, y: y }; 
+```
+
+Si unimos estos atajos para la asignación de valores a propiedades, tenemos una de las combinaciones más potentes de ECMAScript 2015:
+
+```javascript
+const object = { x: 4, y: 1 };
+const {x, y} = object;
+console.log(x); // 4
+console.log(y); // 1
+```
