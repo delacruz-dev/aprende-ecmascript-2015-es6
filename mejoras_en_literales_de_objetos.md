@@ -1,4 +1,4 @@
-# Capítulo 10: Object literals
+# Mejoras en literales de objetos
 
 Los "literales de objetos", u *object literals* en JavaScript se definen como una lista de pares de clave valor rodeados por corchetes:
 
