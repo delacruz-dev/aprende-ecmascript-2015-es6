@@ -5,5 +5,5 @@ Los símbolos son uno tipo primitivo en ECMAScript 2015. Un símbolo es un tipo 
 ## Sintaxis
 
 ```javascript
-Symbol(*[description]*);
+Symbol([description]);
 ```
