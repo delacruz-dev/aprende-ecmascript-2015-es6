@@ -19,3 +19,15 @@ var symbol = Symbol();
 var anotherSymbol = Symbol("another");
 ```
 
+El hecho de utilizar una descripción para la creación un símbolo, no significa que el símbolo creado contenga ese string. Se crea un símbolo nuevo cada vez, aunque se utilice la misma descripción. De este modo, dos símbolos con la misma descripción no son iguales:
+
+```javascript
+Symbol("foo") === Symbol("foo"); //false
+```
+
+Tampoco tiene sentido utilizar la palabra reservada `new` para crear un símbolo:
+
+```javascript
+var symbol = new Symbol(); // TypeError
+```
+
