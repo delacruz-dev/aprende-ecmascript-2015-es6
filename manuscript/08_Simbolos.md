@@ -7,8 +7,8 @@ Los símbolos son uno tipo primitivo en ECMAScript 2015. Un símbolo es un tipo 
 ```javascript
 Symbol([description]);
 ```
-### Parámetros
-#### description `optional`
+### Parámetros ###
+#### description `optional` ####
 De tipo string, opcional. Una descripción del símbolo que puede ser utilizada para depurar, pero no para acceder al propio símbolo.
 
 ## Uso

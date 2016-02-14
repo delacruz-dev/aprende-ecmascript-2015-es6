@@ -61,7 +61,7 @@ $ npm run babel
 
 Esto debería producir la siguiente salida de consola:
 
-```terminal
+```
 $ npm run babel
 
 > my-dir@1.0.0 babel /path/to/my-dir
