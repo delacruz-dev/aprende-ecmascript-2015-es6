@@ -1,4 +1,4 @@
-# Variables de bloque: `let` y `const`
+# Variables de ámbito de bloque: `let`
 
 ## Diferencia entre contexto y alcance
 Cada invocación de función tiene tanto un alcance como un contexto asociados a ella. Fundamentalmente, el alcance es un concepto asociado a funciones mientras que el contexto está asociado a objetos. En otras palabras, el alcance se refiere a la accesibilidad de variables de una función cuando es invocada y es único a cada invocación. En cambio, el contexto es siempre el valor de `this` cuya referencia es siempre el objeto que está ejecutando el código.
@@ -165,9 +165,9 @@ En el siguiente ejemplo la consola imprime `Hola Dani`, ya que la variable `x` e
 
 En el ejemplo anterior, la sentencia `console.log` da error, porque `x` ha sido definida dentro del bloque `if`.
 
-## Declaración de variables inmutables: `const`
+# Variables de solo lectura: `const`
 
-Hay dos formas de resolver el problema del **hoisting**: Acotando el ámbito de definición de las variables con `let` o impidiendo que una variable se modifique a lo largo del código. Para este último caso, se ha introducido la nueva palabra reservada `const`, que permite crear variables de solo lectura cuyo valor no puede ser modificado.
+Las variables de solo lectura son otra de las novedades de ECMAScript 2015, mediante la introducción de la nueva palabra reservada `const`. Cualquier variable declarada como constante, será de solo lectura y su valor no podrá ser modificado.
 
 Veamos un ejemplo:
 
@@ -189,4 +189,18 @@ En este ejemplo vemos cómo desde el momento en que declaramos la constante `HEL
 })();
 ```
 
-Por convención las variable inmutables las definiremos en mayúsculas.
+Pero, ¿qué pasa cuando la variable no se asigna a un valor, sino a un objeto? Veámoslo con un ejemplo:
+
+```javascript
+const USER = {
+  name: 'Daniel',
+  surname: 'de la Cruz',
+  age: 32
+};
+
+USER.name = 'Joan'; // works, as we are modifying a property, but the object remains intact
+USER.age = 'treinta y dos'; // modifying a property type also works
+// USER = 'Daniel de la Cruz'; // fails, since the const type can't be modifyied
+
+console.log(USER);
+```
