@@ -3,38 +3,40 @@
 ## Desestructuración de Arrays
 
 ```javascript
-var numbers = ["1", "2", "3"];
+const numbers = ["1", "2", "3"];
 
 // without destructuring
-const one   = foo[0];
-const two   = foo[1];
-const three = foo[2];
+const one   = numbers[0];
+const two   = numbers[1];
+const three = numbers[2];
 
 // with destructuring
-var [one, two, three] = foo;
+const [uno, dos, tres] = numbers;
+
+console.log(one, two, three); // 1 2 3
+console.log(uno, dos, tres); // 1 2 3
 ```
 
 Podemos asignar de forma desestructurada sin una declaración en la asignación:
 
 ```javascript
-var one, two;
-[one, two] = [ "1", "2"];
+let ichi, ni, san;
+[ichi, ni, san] = ["uno", "dos", "tres"];
 ```
 
 Yendo un poco más allá, podemos utilizar funciones para devolver un conjunto de valores y asignarlos de forma desestructurada:
 
 ```javascript
-function f() {
-    return ["1", "2"];
+function users(){
+  return ['joan', 'carlos', 'david', 'dani'];
 }
 ```
 
 De este modo podemos devolver cualquier número de valores de forma arbitraria. Hasta aquí ninguna novedad, pero si utilizamos la asignación desestructurada:
 
 ```javascript
-var one, two;
-[one, two] = f();
-console.log(one, two); // 1, 2
+let [joan, carlos, david, dani] = users();
+console.log(joan, carlos, david, dani); // joan carlos david dani
 ```
 
 La asignación de variables se realiza en orden, el primer valor se asigna a la primera variable, el segundo a la segunda... y así.
@@ -93,13 +95,13 @@ function drawCircle(options){
     options = options === undefined ? {} : options;
     var radius = options.radius === undefined ? 30 : options.radius;
     var coords = options.coords === undefined ? { x: 0, y: 0 } : options.coords;
-    
+
     console.log(radius, coords);
     // finally, draw the circle
 }
 ```
 
-ECMAScript 5 nos obligaba a realizar una programación demasiado defensiva en el interior de la función, violando además el Single Responsibility Principle: una función solo debería tener un motivo para cambiar. Y la función `drawCircle` tiene demasiadas responsabilidades: comprobar la integridad de los parámetros proporcionados y dibujar el círculo. 
+ECMAScript 5 nos obligaba a realizar una programación demasiado defensiva en el interior de la función, violando además el Single Responsibility Principle: una función solo debería tener un motivo para cambiar. Y la función `drawCircle` tiene demasiadas responsabilidades: comprobar la integridad de los parámetros proporcionados y dibujar el círculo.
 
 Pero aquí no terminan los inconvenientes. ¿Qué es options? La firma del método no especifica qué debe ser, si un entero, una cadena de texto o un objeto con propiedades completamente arbitrarias. Y si intentásemos cambiar esto por una firma más explícita como la siguiente tampoco mejoraríamos el problema, ya que estaríamos obligando al consumidor de la función a pasar los argumentos en un orden concreto, complicando la mantenibilidad del código posterior:
 
@@ -183,7 +185,7 @@ No quería dejar de hablar de una de las funciones más útiles del operador de 
 
 Aunque sea una propuesta para la siguiente versión del estándar (ECMAScript 2016 o ES7), en el momento de escribir estas líneas se encuentra en **Stage 2**, así que es bastante seguro comenzar a utilizarlo desde hoy mismo gracias a la potencia de Babel.
 
-Como podemos ver en el siguiente ejemplo, el [operador de propagación para propiedades de objetos](https://github.com/sebmarkbage/ecmascript-rest-spread) resulta muy útil para añadir nuevas propiedades a un objeto, o sobreescribirlas al vuelo: 
+Como podemos ver en el siguiente ejemplo, el [operador de propagación para propiedades de objetos](https://github.com/sebmarkbage/ecmascript-rest-spread) resulta muy útil para añadir nuevas propiedades a un objeto, o sobreescribirlas al vuelo:
 
 ```javascript
 const worker = {

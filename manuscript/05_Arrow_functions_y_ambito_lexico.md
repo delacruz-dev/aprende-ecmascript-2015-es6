@@ -54,14 +54,71 @@ console.log(greet()); // Hola, forastero!
 Si queremos realizar operaciones más complicadas, podemos hacerlo con corchetes y definiendo un valor de retorno:
 
 ```javascript
-const expand = (rectangle) => {
-    rectangle.x += 10;
-    rectangle.y +=20;
-    return rectangle;
+const resize = ({x, y}, ratio) => {
+  return {
+    x: x * ratio,
+    y: y * ratio
+  };
 };
 
-var rectangle = { x: 1, y: 2 };
-console.log(expand(rectangle));
+console.log(resize({x: 5, y: 15}, 100));
 ```
 
-// TODO: Completar: https://leanpub.com/understandinges6/read/#leanpub-auto-arrow-functions
+## Una función flecha no crea un nuevo contexto
+Una de las mayores fuentes de errores en JavaScript venía dada por la creación de distintos contextos en una función dependiendo de quien las esté ejecutando. Tomemos el siguiente ejemplo:
+
+```javascript
+const randomWinner = function(drivers) {
+  const winner = Math.floor(Math.random() * (0 - drivers.length) + drivers.length);
+  return drivers[winner];
+};
+
+const F1Race = {
+  drivers: [
+    'Alonso',
+    'Vettel',
+    'Button',
+    'Massa'
+  ],
+
+  init: function() {
+    console.log('Los siguientes pilotos van a comenzar la carrera:', this.drivers);
+    setTimeout((function() {
+      console.log('El ganador es', randomWinner(this.drivers));
+    }), 1000);
+  }
+};
+
+F1Race.init();
+```
+
+`F1Race` es un objeto que lanza una carrera de Formula 1 mediante su función `init()`. Al cabo de un segundo, se ejecutará la función `randomWinner()`, que a partir de un array de conductores, seleccionará uno al azar.
+
+Cuando ejecutamos la función `init()`, el programa escribe por consola lo siguiente:
+
+```
+Los siguientes pilotos van a comenzar la carrera: [ 'Alonso', 'Vettel', 'Button', 'Massa' ]
+```
+Esto es posible ya que la función init tiene como contexto el propio objeto `F1Race`. Sin embargo, la función da error tras un segundo, mientras intenta calcular el ganador de forma aleatoria. ¿Cómo es posible?
+
+El motivo es que la función de *callback* que se le pasa a `setTimeout` crea un nuevo contexto, en el que no existe el array `drivers`.
+
+En ECMAScript 5 podíamos solucionar este problema utilizando `bind(this)` para asignar el contexto de la función de callback al del objeto que la contiene, de la siguiente forma:
+
+```javascript
+init: function() {
+  console.log('Los siguientes pilotos van a comenzar la carrera:', this.drivers);
+  setTimeout((function() {
+    console.log('El ganador es', randomWinner(this.drivers));
+  }).bind(this), 1000);
+}
+```
+
+Con ECMAScript 2015, podemos solucionar este contratiempo utilizando *arrow functions* de una forma mucho más elegante, ya que al no crear un nuevo contexto, `this` siempre vendrá determinado por la función que lo contiene:
+
+```javascript
+init: function() {
+  console.log('Los siguientes pilotos van a comenzar la carrera:', this.drivers);
+  setTimeout(() => console.log('El ganador es', randomWinner(this.drivers)), 1000);
+}
+```
