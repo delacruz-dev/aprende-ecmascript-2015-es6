@@ -73,6 +73,7 @@ Esto tiene una ventaja añadida: la de poder hacer sustituciones no solo por un 
 ```javascript
 let myAge = `Mi edad es ${person.age + 3} años`;
 ```
+
 ## Plantillas de string con funciones de etiquetado
 
 Una forma avanzada de plantillas de texto son las plantillas de texto *etiquetadas*. Con ellas seremos capaces de modificar la salida de las plantillas de texto utilizando una función. Dicha función debe tener la siguiente firma:

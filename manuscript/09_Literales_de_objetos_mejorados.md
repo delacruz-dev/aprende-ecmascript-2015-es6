@@ -55,7 +55,7 @@ const myObject = {
 }
 ```
 
-### Nombres de propiedades dinámicos, o computados
+### Nombres de propiedades dinámicos o computados
 En ECMAScript 5 solo teníamos una forma de especificar una clave cuando creábamos una propiedad: mediante un nombre fijo:
 
 ```javascript

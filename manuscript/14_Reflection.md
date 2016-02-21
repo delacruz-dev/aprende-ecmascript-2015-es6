@@ -77,7 +77,7 @@ Veámoslos en detalle:
 
 Llama a una función de destino cuyos argumentos se especifican utilizando el parámetro `argumentsList`.
 
-### Sintaxis ###
+### Sintaxis
 
 ```JavaScript
 Reflect.apply(target, thisArgument, argumentsList)
@@ -111,7 +111,7 @@ Reflect.apply("".charAt, "ponies", [3]);
 // "i"
 ```
 
-## `Reflect.defineProperty()`##
+## `Reflect.defineProperty()`
 
 ```javascript
 var obj = {};

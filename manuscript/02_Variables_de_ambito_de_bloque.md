@@ -97,7 +97,7 @@ if(x > y) {
     let gamma = 12.7 + y;
     i = gamma * x;
 }
-````
+```
 
 En el ejemplo anterior, `gamma` solo existe dentro del bloque del `if`.
 
