@@ -6,6 +6,32 @@ Cada invocación de función tiene tanto un alcance como un contexto asociados a
 ### Alcance de variables
 Las variables pueden ser declaradas con **alcance local** o **alcance global**, lo cual establece su accesibilidad desde diferentes alcances en tiempo de ejecución. Cualquier variable definida como global será accesible en tiempo de ejecución por cualquier alcance, ya que se habrá declarado fuera del cuerpo de una función.
 
+En cambio, las variables locales existen solamente dentro del cuerpo de una función. El alcance local de una variable solo se define a partir del cuerpo de la función que la contiene, ya que JavaScript hasta ahora no permitía definir un alcance local dentro de una condición `if`, bloques `switch`, o iteraciones `for` y `while`.
+
+### Qué es el contexto `this`
+El contexto casi siempre viene determinado por la forma en que una función es invocada. Cuando se llama a la función como método de un objeto, `this` se asigna al objeto cuyo método está siendo ejecutado:
+
+```javascript
+var obj = {
+  foo: function() {
+    console.log(this === obj);
+  }
+};
+
+obj.foo(); // true
+```
+
+El mismo principio se aplica cuando invocamos una función con el operador `new` para crear una instancia del objeto. Cuando se invoca de esta manera, el valor de `this` dentro del alcance de la función se asignará a la nueva instancia creada:
+
+```javascript
+function foo() {
+  console.log(this);
+}
+
+foo(); // window (if node, global)
+new foo(); // foo
+```
+
 ## Hoisting: Lidiando con el contexto en ECMAScript 5
 
 Tomemos como ejemplo la siguiente función en ES5:
@@ -24,10 +50,6 @@ Tomemos como ejemplo la siguiente función en ES5:
 Uno de los mayores problemas a los que nos hemos enfrentado siempre los desarrolladores de JavaScript es el conocido como **hoisting** ("elevación"). El término *hoisting*, el cual no está definido dentro del actual ECMAScript, es comúnmente utilizado para describir el particular comportamiento que JavaScript hace de las variables en el interior de las funciones.
 
 Se entiende como *hoisting* el comportamiento por defecto de cualquier intérprete de JavaScript, que ubica cualquier variable declarada al comienzo de su contexto.
-
-    TODO: definir contexto en javascript. Recursos:
-    http://ryanmorr.com/understanding-scope-and-context-in-javascript/
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 Dicho funcionamiento ha sido ampliamente discutido por la comunidad de desarrolladores sobre si se trataba de un *bug* o una *feature*. Por citar un ejemplo, **John Resig**, creador de **jQuery**, es un poderoso aliado a la hora de gestionar el alcance nuestras variables. Sin embargo hay otros que pensamos que se trata de una fuente irremediable de inconsistencias en nuestros códigos y errores potenciales difíciles de diagnosticar.
 
