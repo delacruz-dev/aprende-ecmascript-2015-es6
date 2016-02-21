@@ -1,1 +1,0 @@
-# Capítulo 10: Nuevas funcionalidades de Programación orientada a objetos

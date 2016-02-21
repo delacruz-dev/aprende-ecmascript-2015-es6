@@ -1,1 +1,0 @@
-# Introducción a ECMAScript 6

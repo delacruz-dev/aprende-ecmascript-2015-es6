@@ -1,5 +1,11 @@
 # Variables de bloque: `let` y `const`
 
+## Diferencia entre contexto y alcance
+Cada invocación de función tiene tanto un alcance como un contexto asociados a ella. Fundamentalmente, el alcance es un concepto asociado a funciones mientras que el contexto está asociado a objetos. En otras palabras, el alcance se refiere a la accesibilidad de variables de una función cuando es invocada y es único a cada invocación. En cambio, el contexto es siempre el valor de `this` cuya referencia es siempre el objeto que está ejecutando el código.
+
+### Alcance de variables
+Las variables pueden ser declaradas con **alcance local** o **alcance global**, lo cual establece su accesibilidad desde diferentes alcances en tiempo de ejecución. Cualquier variable definida como global será accesible en tiempo de ejecución por cualquier alcance, ya que se habrá declarado fuera del cuerpo de una función.
+
 ## Hoisting: Lidiando con el contexto en ECMAScript 5
 
 Tomemos como ejemplo la siguiente función en ES5:
@@ -48,7 +54,7 @@ Algo que podría parecer trivial, puede llegar a ocasionar comportamientos no es
 
 ```javascript
 var x = 'Hello World'; // variable global
- 
+
 (function foo() {
  console.log(x); // esperamos el valor global
  var x = 'New Value'; // redefinimos la variable en contexto local
@@ -69,7 +75,7 @@ La respuesta, como te imaginarás, es el **hoisting**. Al crear un nuevo context
 
 ```javascript
 var x = 'Hello World';
- 
+
 (function foo(){
  var x;
  console.log( x );
@@ -80,9 +86,9 @@ var x = 'Hello World';
 
 Como ves, `x` se *define* antes de la primera impresión por consola, sobrescribiendo el valor asignado en contexto global. Sin embargo, no es hasta después del primer `console.log` cuando se le asigna el nuevo valor.
 
-Esto, como imaginarás, genera todo tipo de inconsistencias en el código de aplicaciones complejas que obligan a pensar dos veces dónde declarar y asignar valores a nuestras variables. 
+Esto, como imaginarás, genera todo tipo de inconsistencias en el código de aplicaciones complejas que obligan a pensar dos veces dónde declarar y asignar valores a nuestras variables.
 
-Por este motivo, se dice que es una buena práctica declarar las variables al principio del contexto, ya que así además incrementamos la legibilidad del código. 
+Por este motivo, se dice que es una buena práctica declarar las variables al principio del contexto, ya que así además incrementamos la legibilidad del código.
 
 ## Declaración de variables de ámbito local: `let`
 
@@ -126,7 +132,7 @@ En el siguiente ejemplo la consola imprime `Hola Dani`, ya que la variable `x` e
 ```javascript
 (function() {
     let x = 'Hola Dani';
-    
+
     if(true) {
         let x = 'Hola Joan';
     }
@@ -139,7 +145,7 @@ En el ejemplo anterior, la sentencia `console.log` da error, porque `x` ha sido 
 
 ## Declaración de variables inmutables: `const`
 
-Hay dos formas de resolver el problema del **hoisting**: Acotando el ámbito de definición de las variables con `let` o impidiendo que una variable se modifique a lo largo del código. Para este último caso, se ha introducido la nueva palabra reservada `const`, que permite crear variables de solo lectura cuyo valor no puede ser modificado. 
+Hay dos formas de resolver el problema del **hoisting**: Acotando el ámbito de definición de las variables con `let` o impidiendo que una variable se modifique a lo largo del código. Para este último caso, se ha introducido la nueva palabra reservada `const`, que permite crear variables de solo lectura cuyo valor no puede ser modificado.
 
 Veamos un ejemplo:
 
