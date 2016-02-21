@@ -4,6 +4,47 @@ Los iteradores son una solución que propone ECMAScript 2015 para recorrer colec
 
 En este capítulo veremos cómo utilizar ambas características.
 
+## Iteradores
+Si has programado algo en JavaScript, es muy probable que hayas terminado haciendo algo como esto:
+
+```JavaScript
+var colors = [ 'red', 'green', 'blue' ];
+
+for (var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+```
+El código anterior no es más que un bucle estándar que utiliza la variable `i` para mantener un cursor sobre el índice del array que se está recorriendo. Aunque es un ejemplo bastante sencillo, la complejidad aumenta cuando tenemos que crear bucles anidados.
+
+Los **iteradores** no son más que objetos con una interfaz específica. La interfaz consiste en un método `next()` que devuelve un objeto con un resultado. Dicho objeto, contiene dos variables: `value`, que representa el valor siguiente; y `done`, el cual solo valdrá `true` cuando no haya más valores que devolver.
+
+Veamos un ejemplo de iterador:
+
+```javascript
+function makeCountDown(counter) {
+  let _counter = counter;
+  return {
+    next: function() {
+      const value = _counter--;
+      const done = _counter <= 0;
+
+      return {
+        value,
+        done
+      };
+    }
+  }
+}
+
+const countdown = makeCountDown(5);
+console.log(countdown.next()); // { value: 5, done: false }
+console.log(countdown.next()); // { value: 4, done: false }
+console.log(countdown.next()); // { value: 3, done: false }
+console.log(countdown.next()); // { value: 2, done: false }
+console.log(countdown.next()); // { value: 1, done: true }
+console.log(countdown.next()); // { value: 0, done: true }
+```
+
 ## Sintaxis de un generador
 
 Un generador es un tipo especial que funciona como factoría para iteradores. Una función se convierte en un generador si contiene una o más expresiones `yield` (producir) y si utiliza la sintaxis `function*` en su declaración.
