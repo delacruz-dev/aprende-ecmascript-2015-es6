@@ -105,19 +105,15 @@ var Person = function Person(name){
 
 var myself = new Person('Dani');
 
-this.name; // undefined
-this.myself.name; // Dani
+console.log(typeof name); // undefined
+console.log(myself.name); // Dani
 ```
 
 La propiedad `name` solo existe dentro del contexto del objeto `myself`. A diferencia de una llamada a una función no constructora:
 
 ```javascript
-function Test(foo){
-    this.foo = foo;
-}
-
-Dummy('bar');
-this.foo; // bar
+Person('Joan');
+console.log(name); // Joan
 ```
 
 ## Creando clases en JavaScript (ES5)
@@ -135,7 +131,7 @@ var Vehicle = function Vehicle(color) {
 // Instance methods
 Vehicle.prototype = {
   go: function go() {
-    return "Vroom!";
+    return "Brrooooom!";
   }
 }
 ```

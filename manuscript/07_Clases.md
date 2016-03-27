@@ -111,10 +111,8 @@ example// Example { value: 123, key: 987 }
 Las propiedades estáticas, o propiedades de clase, son propiedades de la propia clase, por lo tanto no necesitan de una instancia para ser utilizados, a diferencia de los métodos de prototipo:
 
 ```javascript
-> Sample.staticMethod();
-'this is a class method'
-> Sample.prototypeMethod();
-TypeError: Sample.prototypeMethod is not a function
+Sample.staticMethod(); // this is a class method
+Sample.prototypeMethod();// TypeError: Sample.prototypeMethod is not a function
 ```
 
 ### Métodos de prototipo
@@ -122,10 +120,8 @@ En contraposición a los métodos estáticos, los métodos de prototipo son here
 
 ```javascript
 const sample = new Sample();
-sample.prototypeMethod();
-> 'this is a prototype method'
-sample.staticMethod();
-> TypeError: sample.staticMethod is not a function
+sample.prototypeMethod(); // this is a prototype method
+sample.staticMethod(); //TypeError: sample.staticMethod is not a function
 ```
 
 Fíjate que los métodos estáticos no se transmiten a las instancias de la clase.
